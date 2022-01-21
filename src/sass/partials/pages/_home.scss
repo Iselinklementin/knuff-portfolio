@@ -42,7 +42,7 @@
       width: 300px;
       height: 200px;
       position: absolute;
-      top: -15px;
+      top: -10px;
 
       @include for-tablet {
         top: 0;
@@ -498,6 +498,7 @@
       h2 {
         font-family: $font-heading;
         font-size: 32px;
+        font-weight: 600;
       }
     }
 
