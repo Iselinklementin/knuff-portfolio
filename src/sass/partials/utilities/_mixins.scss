@@ -1,0 +1,52 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin border($color, $radius) {
+  border: getColour($color) solid thin;
+  border-radius: $radius;
+}
+
+@mixin for-phone {
+  @media (min-width: $mobile-width) {
+    @content;
+  }
+}
+@mixin for-tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+@mixin for-laptop {
+  @media (min-width: $laptop-width) {
+    @content;
+  }
+}
+@mixin for-desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+@mixin for-large-desktop {
+  @media (min-width: $desktop-large-width) {
+    @content;
+  }
+}
+
+// Source mixin Containers
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}

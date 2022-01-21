@@ -1,0 +1,77 @@
+.btn {
+  width: 160px;
+  text-transform: uppercase;
+  padding: 8px 15px;
+  color: getColour(darkBlue);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  @include flex(row, center, center);
+  transition: all 0.3s;
+}
+
+.btn-margin {
+  margin: 3rem 0 2rem 0;
+}
+
+.developer-btn {
+  @extend .btn;
+  @extend .btn-margin;
+  @include border(green, 4px);
+  background-color: getColour(green);
+
+  &:hover {
+    background-color: getColour(overlayBlue);
+    color: getColour(green);
+  }
+}
+
+.design-btn {
+  @extend .btn;
+  @extend .btn-margin;
+  @include border(yellow, 4px);
+  background-color: getColour(yellow);
+
+  &:hover {
+    background-color: getColour(overlayBlue);
+    color: getColour(yellow);
+  }
+}
+
+.about-btn {
+  @extend .btn;
+  @extend .btn-margin;
+  @include border(pink, 4px);
+  background-color: getColour(pink);
+
+  &:hover {
+    background-color: getColour(overlayBlue);
+    color: getColour(pink);
+  }
+}
+
+.mobile-btn {
+  @include for-tablet {
+    display: none;
+  }
+}
+
+.tablet-btn {
+  display: none;
+
+  @include for-tablet {
+    display: flex;
+  }
+
+  @include for-laptop {
+    display: none;
+  }
+}
+
+.desktop-btn {
+  display: none;
+
+  @include for-laptop {
+    display: flex;
+  }
+}

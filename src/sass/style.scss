@@ -1,0 +1,13 @@
+@import "partials/utilities/variables";
+@import "partials/utilities/functions";
+@import "partials/utilities/mixins";
+@import "partials/base/typography";
+
+@import "partials/layout/layout";
+@import "partials/layout/buttons";
+@import "partials/layout/nav";
+@import "partials/layout/footer";
+
+@import "partials/layout/modal";
+@import "partials/pages/home";
+@import "partials/pages/about";

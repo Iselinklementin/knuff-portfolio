@@ -1,0 +1,96 @@
+.common-divider {
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 15px;
+}
+
+.about-me {
+  .container {
+    @include flex(column, center, center);
+    text-align: center;
+    margin-top: 9rem;
+  }
+
+  .clouds {
+    background-image: url("../../../images/about/clouds.svg");
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 100px;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  h3 {
+    color: getColour(green);
+  }
+
+  .me-container {
+    @include flex(column, center, center);
+    margin-top: 3rem;
+
+    .card-img {
+      object-position: 50% 15%;
+      border-radius: 50% 50%;
+      object-fit: cover;
+      height: 200px;
+      width: 200px;
+    }
+
+    .image-divider {
+      background-image: url("../../../images/home/code-icon-divider-yellow.svg");
+      @extend .common-divider;
+      margin-top: 2rem;
+    }
+
+    .about-btn {
+      margin-top: 1.5rem;
+    }
+  }
+
+  .skillset {
+    padding: 0 10%;
+
+    .container {
+      margin-top: 2rem;
+    }
+
+    h3 {
+      color: getColour(light);
+    }
+
+    h4 {
+      margin-bottom: -8px;
+    }
+
+    .personal {
+      color: getColour(yellow);
+    }
+
+    .professional {
+      color: getColour(green);
+    }
+  }
+
+  .get-in-touch-container {
+    .contact-link-container {
+      line-height: 2.5;
+      @include flex(row, flex-start, center);
+
+      i {
+        margin-right: 1rem;
+        font-size: 1.5rem;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,552 @@
+.common-divider {
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 15px;
+}
+
+.common-heading {
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.common-h3-desktop {
+  font-family: $font-heading;
+  font-size: 34px;
+  margin-bottom: 0rem;
+}
+
+.index {
+  .home-introduction-heading {
+    @include flex(column, center, center);
+    margin: 3rem auto;
+    padding-top: 6rem;
+    position: relative;
+    text-align: center;
+
+    @include for-tablet {
+      @include flex(column, center, baseline);
+      text-align: left;
+      padding-top: 8rem;
+      margin: 3rem 0;
+      max-width: 300px;
+    }
+
+    @include for-laptop {
+      max-width: 500px;
+      margin-top: 10rem;
+    }
+
+    .intro-clouds {
+      background-image: url("../../../images/home/intro-clouds.svg");
+      background-repeat: no-repeat;
+      width: 300px;
+      height: 200px;
+      position: absolute;
+      top: -15px;
+
+      @include for-tablet {
+        top: 0;
+      }
+
+      @include for-laptop {
+        right: 10%;
+      }
+
+      @include for-laptop {
+        top: -4rem;
+      }
+    }
+
+    // h2 {
+    //   font-weight: 400;
+    //   margin-bottom: 1rem;
+    //   font-size: 18px;
+    // }
+
+    // h1 {
+    //   font-size: 48px;
+    //   padding: 0 12%;
+    //   margin: 0 auto 2rem auto;
+
+    //   @include for-tablet {
+    //     margin: initial;
+    //     padding: initial;
+    //     line-height: 1.3;
+    //   }
+
+    //   @include for-laptop {
+    //     font-size: 62px;
+    //   }
+    // }
+
+    .tablet-heading {
+      display: none;
+
+      @include for-tablet {
+        display: block;
+      }
+    }
+
+    .mobile-heading {
+      @include for-tablet {
+        display: none;
+      }
+    }
+
+    // .head-line {
+    //   background-image: url("../../../images/home/head-line.svg");
+    //   background-repeat: no-repeat;
+    //   height: 120px;
+    //   width: 16px;
+    //   margin-top: 2rem;
+
+    //   @include for-tablet {
+    //     display: none;
+    //   }
+    // }
+  }
+
+  .image-container {
+    display: none;
+
+    @include for-tablet {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: -8rem;
+      @include flex(column, center, center);
+    }
+
+    @include for-laptop {
+      right: -7rem;
+    }
+
+    @include for-large-desktop {
+      right: -14rem;
+      top: -5rem;
+    }
+
+    .intro-image {
+      background-image: url("../../../images/home/iMac1.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 600px;
+      width: 600px;
+
+      @include for-laptop {
+        height: 750px;
+        width: 750px;
+      }
+
+      @include for-large-desktop {
+        height: 850px;
+        width: 850px;
+      }
+    }
+
+    p {
+      color: getColour(green);
+      font-size: 18px;
+      margin-top: -5rem;
+      text-transform: uppercase;
+    }
+
+    .welcome-line {
+      background-image: url("../../../images/home/iMac-line.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 120px;
+      width: 36px;
+    }
+  }
+
+  .intro-section {
+    @include flex(column, center, center);
+    text-align: center;
+    padding: 0 12%;
+    margin: auto;
+
+    @include for-tablet {
+      @include flex(column, center, baseline);
+      text-align: left;
+      margin: -2rem 0 2rem 0;
+      padding: initial;
+    }
+
+    // h3 {
+    //   color: getColour(pink);
+    //   text-transform: uppercase;
+    //   font-size: 16px;
+    //   letter-spacing: 0.8px;
+    // }
+
+    .code-icon {
+      background-image: url("../../../images/home/code-icon-divider.svg");
+      @extend .common-divider;
+
+      @include for-tablet {
+        display: none;
+      }
+    }
+
+    p:first-of-type {
+      font-weight: 600;
+      font-size: 20px;
+
+      @include for-laptop {
+        font-size: 24px;
+      }
+    }
+
+    p {
+      @include for-tablet {
+        max-width: 300px;
+        margin-top: -0.2rem;
+
+        @include for-laptop {
+          max-width: 350px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  // divider between cards
+
+  .divide {
+    display: none;
+
+    @include for-laptop {
+      display: block;
+      margin: 7rem auto;
+      width: 960px;
+      border-bottom: getColour(pink) solid thin;
+    }
+  }
+
+  .card {
+    @include flex(column, center, center);
+    background-color: getColour(overlayBlue);
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
+
+    @include for-tablet {
+      @include flex(row, space-between, center);
+      flex-wrap: wrap;
+      max-width: 660px;
+      padding: 2rem;
+      margin-top: 3rem;
+
+      @include for-laptop {
+        align-items: flex-end;
+        background-color: unset;
+        max-width: 960px;
+      }
+
+      // design card
+
+      &.designer {
+        margin-top: 11rem;
+
+        @include for-laptop {
+          margin-top: 16rem;
+          padding: 0;
+        }
+      }
+    }
+
+    // developer card
+
+    &.developer {
+      @include for-tablet {
+        flex-direction: row-reverse;
+
+        @include for-laptop {
+          padding: 0;
+        }
+      }
+    }
+
+    &-top {
+      @include flex(column, center, center);
+    }
+
+    &-img {
+      margin-top: 2rem;
+      border-radius: 50% 50%;
+      object-fit: cover;
+      height: 200px;
+      width: 200px;
+
+      @include for-tablet {
+        height: 170px;
+        width: 170px;
+      }
+    }
+
+    .card-divider {
+      background-image: url("../../../images/home/code-icon-divider-yellow.svg");
+      @extend .common-divider;
+      margin-top: 2rem;
+    }
+
+    // card headings
+
+    &-designer-heading {
+      color: getColour(yellow);
+      @extend .common-heading;
+
+      @include for-laptop {
+        display: none;
+      }
+
+      &-desktop {
+        @extend .common-h3-desktop;
+
+        & span {
+          color: getColour(yellow);
+        }
+      }
+    }
+
+    &-developer-heading {
+      color: getColour(green);
+      @extend .common-heading;
+
+      @include for-laptop {
+        display: none;
+      }
+
+      &-desktop {
+        @extend .common-h3-desktop;
+
+        & span {
+          color: getColour(green);
+        }
+      }
+    }
+
+    // keywords
+
+    .keywords {
+      @include flex(row, center, center);
+      flex-wrap: wrap;
+      max-width: 260px;
+      margin-bottom: 1.5rem;
+      color: getColour(pink);
+
+      @include for-laptop {
+        display: none;
+      }
+
+      p {
+        margin: 2px 5px;
+      }
+    }
+
+    .list-container {
+      position: relative;
+      padding: 2rem;
+      margin: 1rem;
+      width: 90%;
+      max-width: 300px;
+
+      @include for-tablet {
+        width: unset;
+        max-width: 260px;
+      }
+
+      @include for-laptop {
+        max-width: 240px;
+      }
+
+      ul,
+      li {
+        @include reset-list;
+        line-height: 1.7;
+      }
+
+      li {
+        @include flex(row, baseline, center);
+      }
+
+      ul {
+        padding-bottom: 1rem;
+      }
+
+      .tablet-btn {
+        position: absolute;
+        bottom: -1.2rem;
+        margin: auto;
+        left: 0;
+        right: 0;
+      }
+    }
+
+    // lists
+
+    .list-background {
+      @include for-laptop {
+        background-color: getColour(overlayBlue);
+      }
+    }
+
+    .description {
+      margin: 1rem;
+      max-width: 300px;
+
+      @include for-tablet {
+        margin-top: 2rem;
+        max-width: unset;
+      }
+
+      @include for-laptop {
+        width: 355px;
+      }
+
+      &-tablet {
+        @include for-laptop {
+          display: none;
+        }
+      }
+
+      &-desktop {
+        display: none;
+
+        @include for-laptop {
+          display: block;
+        }
+
+        // description design
+
+        &.design {
+          text-align: right;
+
+          // keywords design desktop
+
+          .keywords-desktop {
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+
+    // keywords desktop
+
+    .keywords-desktop {
+      display: none;
+
+      @include for-laptop {
+        font-size: 15px;
+        color: getColour(pink);
+        @include flex(row, flex-start, center);
+
+        p::after {
+          content: " ";
+          padding: 3px;
+        }
+      }
+    }
+  }
+
+  .design-list {
+    @include border(yellow, 8px);
+
+    .fa-circle {
+      margin-right: 10px;
+      font-size: 10px;
+      color: getColour(yellow);
+    }
+  }
+
+  .developer-list {
+    @include border(green, 8px);
+
+    .fa-circle {
+      margin-right: 10px;
+      font-size: 10px;
+      color: getColour(green);
+    }
+  }
+
+  // about card
+
+  .about {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: relative;
+
+    @include for-laptop {
+      background-color: getColour(overlayBlue);
+      margin-top: 11rem;
+      height: 400px;
+    }
+
+    &-text {
+      margin: 1rem;
+      max-width: 450px;
+
+      @include for-tablet {
+        padding-left: 3rem;
+      }
+
+      @include for-laptop {
+        max-width: 700px;
+      }
+
+      h2 {
+        font-family: $font-heading;
+        font-size: 32px;
+      }
+    }
+
+    &-intro {
+      font-weight: 600;
+      font-size: 20px;
+      max-width: 350px;
+    }
+
+    .card-img {
+      object-position: 50% 15%;
+    }
+
+    &-img-container {
+      @include flex(column, center, center);
+
+      @include for-tablet {
+        margin-left: 2rem;
+      }
+    }
+
+    .tablet-btn {
+      margin-top: 2rem;
+    }
+
+    .about-me-line {
+      display: none;
+
+      @include for-laptop {
+        position: absolute;
+        display: block;
+        background-image: url("../../../images/home/about-me-line.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 62px;
+        width: 72px;
+        top: 32px;
+        right: 20px;
+      }
+    }
+
+    .desktop-btn {
+      @include for-tablet {
+        display: flex;
+      }
+    }
+  }
+
+  .desktop-btn {
+    margin-top: 1.5rem;
+  }
+}
