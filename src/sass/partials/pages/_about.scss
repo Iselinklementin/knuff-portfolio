@@ -90,7 +90,18 @@
 
       a {
         text-decoration: none;
+        color: getColour(green);
       }
     }
+  }
+
+  .line {
+    border-bottom: getColour(yellow) thin solid;
+    width: 100%;
+  }
+
+  .image-container {
+    width: 200px;
+    border: red solid thin;
   }
 }
