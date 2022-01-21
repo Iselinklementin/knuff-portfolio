@@ -63,7 +63,7 @@ export default function App() {
             <img src={Bird} className="card-img" />
             <div className="card-divider"></div>
             <h3 className="card-designer-heading">Designer</h3>
-            <a className="design-btn desktop-btn" href="/portfolio">
+            <a className="design-btn desktop-btn" href="Portfolio">
               Portfolio
             </a>
             <div className="keywords">
@@ -97,7 +97,7 @@ export default function App() {
             <div className="list-container design-list">
               <p>Programs I’ve been working with regularly:</p>
               <List listItems={designObjects} />
-              <a className="design-btn tablet-btn" href="/portfolio">
+              <a className="design-btn tablet-btn" href="Portfolio">
                 Portfolio
               </a>
             </div>
@@ -117,7 +117,7 @@ export default function App() {
               <p>Creative</p>
             </div>
 
-            <a className="design-btn mobile-btn" href="/portfolio">
+            <a className="design-btn mobile-btn" href="Portfolio">
               Portfolio
             </a>
           </div>
@@ -130,7 +130,7 @@ export default function App() {
             <img src={Bird} className="card-img" />
             <div className="card-divider"></div>
             <h3 className="card-developer-heading">Developer</h3>
-            <a className="developer-btn desktop-btn" href="/websites">
+            <a className="developer-btn desktop-btn" href="Websites">
               Websites
             </a>
             <div className="keywords">
@@ -164,7 +164,7 @@ export default function App() {
             <div className="list-container developer-list">
               <p>A few technologies I’ve been working with recently:</p>
               <List listItems={developerObjects} />
-              <a className="developer-btn tablet-btn" href="/Websites">
+              <a className="developer-btn tablet-btn" href="Websites">
                 Websites
               </a>
             </div>
@@ -183,7 +183,7 @@ export default function App() {
               <p>DRY</p>
               <p>Organized</p>
             </div>
-            <a className="developer-btn mobile-btn" href="/websites">
+            <a className="developer-btn mobile-btn" href="Websites">
               Websites
             </a>
           </div>
@@ -194,7 +194,7 @@ export default function App() {
           <div className="about-img-container">
             <img src={Me} className="card-img" />
             <div className="card-divider"></div>
-            <a className="about-btn tablet-btn desktop-btn" href="/about">
+            <a className="about-btn tablet-btn desktop-btn" href="About">
               About me
             </a>
           </div>
@@ -214,7 +214,7 @@ export default function App() {
               with UX and creating UI - but also when writing short, meaningful code.
             </p>
 
-            <a className="about-btn mobile-btn" href="/about">
+            <a className="about-btn mobile-btn" href="About">
               About me
             </a>
           </div>
