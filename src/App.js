@@ -65,7 +65,7 @@ export default function App() {
             <div className="card-divider"></div>
             <h3 className="card-designer-heading">Designer</h3>
 
-            <Link to="/Portfolio" className="design-btn desktop-btn">
+            <Link to="/portfolio" className="design-btn desktop-btn">
               Portfolio
             </Link>
             <div className="keywords">
@@ -99,7 +99,7 @@ export default function App() {
             <div className="list-container design-list">
               <p>Programs I’ve been working with regularly:</p>
               <List listItems={designObjects} />
-              <Link to="/Portfolio" className="design-btn tablet-btn">
+              <Link to="/portfolio" className="design-btn tablet-btn">
                 Portfolio
               </Link>
             </div>
@@ -119,7 +119,7 @@ export default function App() {
               <p>Creative</p>
             </div>
 
-            <Link to="/Portfolio" className="design-btn mobile-btn">
+            <Link to="/portfolio" className="design-btn mobile-btn">
               Portfolio
             </Link>
           </div>
@@ -133,7 +133,7 @@ export default function App() {
             <div className="card-divider"></div>
             <h3 className="card-developer-heading">Developer</h3>
 
-            <Link to="/Websites" className="developer-btn desktop-btn">
+            <Link to="/websites" className="developer-btn desktop-btn">
               Websites
             </Link>
 
@@ -169,7 +169,7 @@ export default function App() {
               <p>A few technologies I’ve been working with recently:</p>
               <List listItems={developerObjects} />
 
-              <Link to="/Websites" className="developer-btn tablet-btn">
+              <Link to="/websites" className="developer-btn tablet-btn">
                 Websites
               </Link>
             </div>
@@ -189,7 +189,7 @@ export default function App() {
               <p>Organized</p>
             </div>
 
-            <Link to="/Websites" className="developer-btn mobile-btn">
+            <Link to="/websites" className="developer-btn mobile-btn">
               Websites
             </Link>
           </div>
@@ -201,7 +201,7 @@ export default function App() {
             <img src={Me} className="card-img" />
             <div className="card-divider"></div>
 
-            <Link to="/About" className="about-btn tablet-btn desktop-btn">
+            <Link to="/about" className="about-btn tablet-btn desktop-btn">
               About me
             </Link>
           </div>
@@ -221,7 +221,7 @@ export default function App() {
               with UX and creating UI - but also when writing short, meaningful code.
             </p>
 
-            <Link to="/About" className="about-btn mobile-btn">
+            <Link to="/about" className="about-btn mobile-btn">
               About me
             </Link>
           </div>
