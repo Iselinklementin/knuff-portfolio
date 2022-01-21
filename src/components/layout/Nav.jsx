@@ -15,13 +15,13 @@ function Nav() {
             <img className="logo-mobile" src={VNlogo} alt="Knuff-logo" />
           </Link>
           <div className="link-icons-container">
-            <Link to="/Websites">
+            <Link to="/websites">
               <img className="nav-icon" src={codeIcon} alt="design-icon" />
             </Link>
-            <Link to="/Portfolio">
+            <Link to="/portfolio">
               <img className="nav-icon" src={designIcon} alt="design-icon" />
             </Link>
-            <Link to="/About">
+            <Link to="/about">
               <img className="nav-icon" src={aboutIcon} alt="design-icon" />
             </Link>
           </div>
@@ -32,13 +32,13 @@ function Nav() {
             <img className="logo-desktop" src={knuffLogo} alt="Knuff-logo" />
           </Link>
           <div className="link-icons-container">
-            <Link to="/Websites">
+            <Link to="/websites">
               <img className="nav-icon" src={codeIcon} alt="design-icon" />
             </Link>
-            <Link to="/Portfolio">
+            <Link to="/portfolio">
               <img className="nav-icon" src={designIcon} alt="design-icon" />
             </Link>
-            <Link to="/About">
+            <Link to="/about">
               <img className="nav-icon" src={aboutIcon} alt="design-icon" />
             </Link>
             <Link to="#" className="resume-btn">
