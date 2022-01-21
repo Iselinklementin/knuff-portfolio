@@ -3,6 +3,7 @@ import Footer from "../layout/Footer";
 import Heading from "../ui/Heading";
 import Container from "../ui/Container";
 import Me from "../../images/about-me.jpg";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -79,13 +80,15 @@ export default function About() {
           </p>
 
           <div className="contact-link-container">
-            <i className="far fa-envelope"></i>
-            <a href="#">iselin@knuff.no</a>
+            <Link to="iselin@knuff.no">
+              <i className="far fa-envelope"></i>iselin@knuff.no
+            </Link>
           </div>
 
           <div className="contact-link-container">
-            <i className="fab fa-linkedin"></i>
-            <a href="#">LinkedIn</a>
+            <Link to="#">
+              <i className="fab fa-linkedin"></i> LinkedIn
+            </Link>
           </div>
         </section>
 

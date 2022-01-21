@@ -9,6 +9,7 @@ import React from "react";
 import List from "./components/ui/List";
 import Container from "./components/ui/Container";
 import Heading from "./components/ui/Heading";
+import { Link } from "react-router-dom";
 
 export default function App() {
   const [shouldShowModal, setShouldShowModal] = useState(false);
@@ -63,9 +64,10 @@ export default function App() {
             <img src={Bird} className="card-img" />
             <div className="card-divider"></div>
             <h3 className="card-designer-heading">Designer</h3>
-            <a className="design-btn desktop-btn" href="Portfolio">
+
+            <Link to="/Portfolio" className="design-btn desktop-btn">
               Portfolio
-            </a>
+            </Link>
             <div className="keywords">
               <p>Colours</p>
               <p>Drawing</p>
@@ -97,9 +99,9 @@ export default function App() {
             <div className="list-container design-list">
               <p>Programs I’ve been working with regularly:</p>
               <List listItems={designObjects} />
-              <a className="design-btn tablet-btn" href="Portfolio">
+              <Link to="/Portfolio" className="design-btn tablet-btn">
                 Portfolio
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -117,9 +119,9 @@ export default function App() {
               <p>Creative</p>
             </div>
 
-            <a className="design-btn mobile-btn" href="Portfolio">
+            <Link to="/Portfolio" className="design-btn mobile-btn">
               Portfolio
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -130,9 +132,11 @@ export default function App() {
             <img src={Bird} className="card-img" />
             <div className="card-divider"></div>
             <h3 className="card-developer-heading">Developer</h3>
-            <a className="developer-btn desktop-btn" href="Websites">
+
+            <Link to="/Websites" className="developer-btn desktop-btn">
               Websites
-            </a>
+            </Link>
+
             <div className="keywords">
               <p>Meaningful</p>
               <p>Clean</p>
@@ -164,9 +168,10 @@ export default function App() {
             <div className="list-container developer-list">
               <p>A few technologies I’ve been working with recently:</p>
               <List listItems={developerObjects} />
-              <a className="developer-btn tablet-btn" href="Websites">
+
+              <Link to="/Websites" className="developer-btn tablet-btn">
                 Websites
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -183,9 +188,10 @@ export default function App() {
               <p>DRY</p>
               <p>Organized</p>
             </div>
-            <a className="developer-btn mobile-btn" href="Websites">
+
+            <Link to="/Websites" className="developer-btn mobile-btn">
               Websites
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -194,9 +200,10 @@ export default function App() {
           <div className="about-img-container">
             <img src={Me} className="card-img" />
             <div className="card-divider"></div>
-            <a className="about-btn tablet-btn desktop-btn" href="About">
+
+            <Link to="/About" className="about-btn tablet-btn desktop-btn">
               About me
-            </a>
+            </Link>
           </div>
 
           <div className="about-text">
@@ -214,9 +221,9 @@ export default function App() {
               with UX and creating UI - but also when writing short, meaningful code.
             </p>
 
-            <a className="about-btn mobile-btn" href="About">
+            <Link to="/About" className="about-btn mobile-btn">
               About me
-            </a>
+            </Link>
           </div>
         </section>
 
