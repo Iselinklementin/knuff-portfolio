@@ -52,6 +52,7 @@ export default function About() {
             <h4>Development</h4>
             <p>Keeping up with trends and make sure websites are optimized for users and search engines.</p>
 
+            <div className="code-icon"></div>
             <h3>
               <span className="personal">Personal</span> skillset
             </h3>

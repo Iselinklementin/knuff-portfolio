@@ -180,14 +180,14 @@
     //   letter-spacing: 0.8px;
     // }
 
-    .code-icon {
-      background-image: url("../../../images/home/code-icon-divider.svg");
-      @extend .common-divider;
+    // .code-icon {
+    //   background-image: url("../../../images/home/code-icon-divider.svg");
+    //   @extend .common-divider;
 
-      @include for-tablet {
-        display: none;
-      }
-    }
+    //   @include for-tablet {
+    //     display: none;
+    //   }
+    // }
 
     p:first-of-type {
       font-weight: 600;
