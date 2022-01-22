@@ -13,13 +13,22 @@ export default function About() {
         <Nav />
         <div className="clouds"></div>
         <Container>
-          <Heading text="Hello!" />
-          <h3>Thanks for stopping by.</h3>
-          <h2>
-            I’m Iselin. I like laughter, learning, structure, pretty colors, honesty, gaming and people who have fun
-            facts.
-          </h2>
-          <p>I’m quietly confident, self going, funny and easily entertained. </p>
+          <div className="intro-container">
+            <Heading text="Hello!" />
+            <h3>Thanks for stopping by.</h3>
+            <h2>
+              I’m Iselin. I like laughter, learning, structure, pretty colors, honesty, gaming and people who have fun
+              facts.
+            </h2>
+            <p>I’m quietly confident, self going, funny and easily entertained. </p>
+            <p className="tablet">
+              I am a creative soul. I never seem to stop creating anything and there is always an idea brewing in my
+              mind. Even though I’m creative, I think logically about all things, and that’s how I got in to frontend
+              development. I enjoy using my creativity to create code and solving problems, and I always have the user
+              in mind when I’m working.
+            </p>
+          </div>
+
           <div className="head-line"></div>
 
           <div className="me-container">
@@ -30,7 +39,7 @@ export default function About() {
             </a>
           </div>
 
-          <p>
+          <p className="mobile">
             I am a creative soul. I never seem to stop creating anything and there is always an idea brewing in my mind.
             Even though I’m creative, I think logically about all things, and that’s how I got in to frontend
             development. I enjoy using my creativity to create code and solving problems, and I always have the user in
@@ -39,7 +48,7 @@ export default function About() {
         </Container>
 
         <section className="skillset">
-          <Container>
+          <div className="professional-wrapper">
             <h3>
               <span className="professional">Professional</span> skillset
             </h3>
@@ -51,8 +60,11 @@ export default function About() {
             <p>Creating beautiful design, and test the user’s overall experience.</p>
             <h4>Development</h4>
             <p>Keeping up with trends and make sure websites are optimized for users and search engines.</p>
+          </div>
 
-            <div className="code-icon"></div>
+          <div className="code-icon"></div>
+
+          <div className="personal-wrapper">
             <h3>
               <span className="personal">Personal</span> skillset
             </h3>
@@ -65,10 +77,11 @@ export default function About() {
             <p>There is nothing more satisfying for me than putting the last piece of the puzzle in its place.</p>
             <h4>Active</h4>
             <p>I like stay active. Hiking, going to the gym or trying new sports.</p>
-          </Container>
+          </div>
         </section>
 
         <section className="get-in-touch-container">
+          <div className="contact-icon"></div>
           <Heading text="Get in touch" class="get-in-touch-heading" />
           <p>
             Want to get in touch? If saying my name three times doesn’t work, you could also use these methods. My inbox

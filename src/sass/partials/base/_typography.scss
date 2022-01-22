@@ -1,12 +1,6 @@
 $font-primary: "Roboto", sans-serif;
 $font-heading: "Lora", serif;
 
-h2 {
-  font-weight: 400;
-  margin-bottom: 1rem;
-  font-size: 18px;
-}
-
 h1 {
   font-family: $font-heading;
   font-size: 48px;
@@ -22,6 +16,12 @@ h1 {
   @include for-laptop {
     font-size: 62px;
   }
+}
+
+h2 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-size: 18px;
 }
 
 h3 {

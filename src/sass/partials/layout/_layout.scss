@@ -80,3 +80,17 @@ footer {
     display: none;
   }
 }
+
+.mobile {
+  @include for-tablet {
+    display: none;
+  }
+}
+
+.tablet {
+  display: none;
+
+  @include for-tablet {
+    display: flex;
+  }
+}
