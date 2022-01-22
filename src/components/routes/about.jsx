@@ -4,7 +4,7 @@ import Heading from "../ui/Heading";
 import Container from "../ui/Container";
 import Me from "../../images/about-me.jpg";
 import { Link } from "react-router-dom";
-import ImageData from "../constant/ImageData";
+import LogoData from "../constant/LogoData";
 
 export default function About() {
   return (
@@ -78,21 +78,19 @@ export default function About() {
             <Link to="iselin@knuff.no">
               <i className="far fa-envelope"></i>iselin@knuff.no
             </Link>
-          </div>
 
-          <div className="contact-link-container">
             <Link to="#">
               <i className="fab fa-linkedin"></i> LinkedIn
             </Link>
           </div>
         </section>
 
-        <Container>
-          <div className="line"></div>
-        </Container>
+        <div className="line"></div>
 
-        <p>Companies I’ve worked with:</p>
-        <ImageData />
+        <p className="companies">Companies I’ve worked with:</p>
+        <div className="logo-wrap">
+          <LogoData />
+        </div>
       </div>
       <Footer />
     </>

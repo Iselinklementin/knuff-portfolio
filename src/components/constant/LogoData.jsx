@@ -56,12 +56,12 @@ const companieLogos = [
   },
 ];
 
-export default function ImageData() {
+export default function LogoData() {
   return (
     <>
       {companieLogos.map((logo) => {
         return (
-          <div className="image-container" key={logo.id}>
+          <div className="logo-container" key={logo.id}>
             <img src={logo.src} alt={logo.name} />
           </div>
         );
