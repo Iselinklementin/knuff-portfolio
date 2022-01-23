@@ -48,63 +48,67 @@ export default function About() {
           </p>
         </Container>
 
-        <section className="skillset">
-          <div className="professional-wrapper">
-            <h3>
-              <span className="professional">Professional</span> skillset
-            </h3>
-            <h4>Design thinking</h4>
-            <p>Empathize, defining the needs and creating ideas.</p>
-            <h4>Prototype</h4>
-            <p>Making a presentation and testing the site before coding.</p>
-            <h4>UX / UI</h4>
-            <p>Creating beautiful design, and test the user’s overall experience.</p>
-            <h4>Development</h4>
-            <p>Keeping up with trends and make sure websites are optimized for users and search engines.</p>
+        <div className="wrap-skill-contact">
+          <section className="skillset">
+            <div className="professional-wrapper">
+              <h3>
+                <span className="professional">Professional</span> skillset
+              </h3>
+              <h4>Design thinking</h4>
+              <p>Empathize, defining the needs and creating ideas.</p>
+              <h4>Prototype</h4>
+              <p>Making a presentation and testing the site before coding.</p>
+              <h4>UX / UI</h4>
+              <p>Creating beautiful design, and test the user’s overall experience.</p>
+              <h4>Development</h4>
+              <p>Keeping up with trends and make sure websites are optimized for users and search engines.</p>
+            </div>
+
+            <div className="code-icon"></div>
+
+            <div className="personal-wrapper">
+              <h3>
+                <span className="personal">Personal</span> skillset
+              </h3>
+
+              <h4>Create</h4>
+              <p>Decorating rooms, drawing, doing gardening or building stuff.</p>
+              <h4>Gamer</h4>
+              <p>It started with Duke Nukem in 1993, after that I was sold!</p>
+              <h4>Jigsaw Puzzles</h4>
+              <p>There is nothing more satisfying for me than putting the last piece of the puzzle in its place.</p>
+              <h4>Active</h4>
+              <p>I like stay active. Hiking, going to the gym or trying new sports.</p>
+            </div>
+          </section>
+
+          <section className="get-in-touch-container">
+            <div className="contact-icon"></div>
+            <Heading text="Get in touch" class="get-in-touch-heading" />
+            <p>
+              Want to get in touch? If saying my name three times doesn’t work, you could also use these methods. My
+              inbox is always open.
+            </p>
+
+            <div className="contact-link-container">
+              <Link to="iselin@knuff.no">
+                <i className="far fa-envelope"></i>iselin@knuff.no
+              </Link>
+
+              <Link to="#">
+                <i className="fab fa-linkedin"></i> LinkedIn
+              </Link>
+            </div>
+          </section>
+        </div>
+
+        <div className="contain-companies">
+          <div className="line"></div>
+
+          <p className="companies">Companies I’ve worked with:</p>
+          <div className="logo-wrap">
+            <LogoData />
           </div>
-
-          <div className="code-icon"></div>
-
-          <div className="personal-wrapper">
-            <h3>
-              <span className="personal">Personal</span> skillset
-            </h3>
-
-            <h4>Create</h4>
-            <p>Decorating rooms, drawing, doing gardening or building stuff.</p>
-            <h4>Gamer</h4>
-            <p>It started with Duke Nukem in 1993, after that I was sold!</p>
-            <h4>Jigsaw Puzzles</h4>
-            <p>There is nothing more satisfying for me than putting the last piece of the puzzle in its place.</p>
-            <h4>Active</h4>
-            <p>I like stay active. Hiking, going to the gym or trying new sports.</p>
-          </div>
-        </section>
-
-        <section className="get-in-touch-container">
-          <div className="contact-icon"></div>
-          <Heading text="Get in touch" class="get-in-touch-heading" />
-          <p>
-            Want to get in touch? If saying my name three times doesn’t work, you could also use these methods. My inbox
-            is always open.
-          </p>
-
-          <div className="contact-link-container">
-            <Link to="iselin@knuff.no">
-              <i className="far fa-envelope"></i>iselin@knuff.no
-            </Link>
-
-            <Link to="#">
-              <i className="fab fa-linkedin"></i> LinkedIn
-            </Link>
-          </div>
-        </section>
-
-        <div className="line"></div>
-
-        <p className="companies">Companies I’ve worked with:</p>
-        <div className="logo-wrap">
-          <LogoData />
         </div>
       </div>
       <Footer />
