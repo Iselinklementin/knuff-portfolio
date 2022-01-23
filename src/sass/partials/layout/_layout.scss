@@ -94,3 +94,16 @@ footer {
     display: flex;
   }
 }
+
+.text {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+
+  @include for-laptop {
+    font-size: 24px;
+    text-align: left;
+    margin: unset;
+  }
+}
