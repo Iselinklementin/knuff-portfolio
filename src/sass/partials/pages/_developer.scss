@@ -15,49 +15,40 @@
     height: 105px;
   }
 
-  .iphone {
-    display: flex;
-    background-image: url("../../../images/developer/iphone-web.png");
-    background-repeat: no-repeat;
-    width: 468px;
-    height: 312px;
+  .image {
+    position: relative;
     z-index: 1;
-    border: red solid thin;
-
-    // @include for-portfolio {
-    //   background-image: url("../../../images/developer/develop-pad.png");
-    //   height: 446px;
-    //   width: 520px;
-    // }
-
-    @include for-portfolio {
-      width: 648px;
-      height: 432px;
-      // background-attachment: fixed;
-      background-position: center;
-    }
+    width: 100%;
+    height: auto;
   }
 
   .background-container {
     position: relative;
-    height: 240px;
+    border: red solid thin;
     width: 100%;
     z-index: 0;
-    background-position: center;
 
-    // @include for-portfolio {
-    //   display: none;
-    // }
+    @include for-tablet {
+      display: none;
+    }
 
     .background {
       position: absolute;
       background-image: url("../../../images/developer/developer-background.svg");
       background-repeat: no-repeat;
-      // height: 240px;
-      height: 438px;
+      min-height: 438px;
       width: 100%;
       top: -10rem;
-      object-fit: cover;
+
+      @include for-small-tablet-portfolio {
+        top: -12rem;
+      }
     }
+  }
+
+  .head-line {
+    height: 93px;
+    width: 12px;
+    margin: 0rem auto auto auto;
   }
 }
