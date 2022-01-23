@@ -16,23 +16,45 @@
   }
 
   .iphone {
+    display: flex;
     background-image: url("../../../images/developer/iphone-web.png");
     background-repeat: no-repeat;
     width: 468px;
     height: 312px;
     z-index: 1;
+    border: red solid thin;
+
+    // @include for-portfolio {
+    //   background-image: url("../../../images/developer/develop-pad.png");
+    //   height: 446px;
+    //   width: 520px;
+    // }
+
+    @include for-portfolio {
+      width: 648px;
+      height: 432px;
+      // background-attachment: fixed;
+      background-position: center;
+    }
   }
 
   .background-container {
     position: relative;
     height: 240px;
+    width: 100%;
     z-index: 0;
+    background-position: center;
+
+    // @include for-portfolio {
+    //   display: none;
+    // }
 
     .background {
       position: absolute;
       background-image: url("../../../images/developer/developer-background.svg");
       background-repeat: no-repeat;
-      height: 240px;
+      // height: 240px;
+      height: 438px;
       width: 100%;
       top: -10rem;
       object-fit: cover;

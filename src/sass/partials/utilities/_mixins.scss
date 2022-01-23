@@ -42,6 +42,12 @@
   }
 }
 
+@mixin for-portfolio {
+  @media (min-width: 530px) {
+    @content;
+  }
+}
+
 // Source mixin Containers
 @mixin make-container($padding-x: $container-padding-x) {
   width: 100%;
