@@ -77,7 +77,7 @@
     margin: auto;
 
     @include for-tablet {
-      top: 16%;
+      top: 9%;
       left: 27%;
       margin: unset;
     }
@@ -247,8 +247,7 @@
     text-align: center;
 
     @include for-laptop {
-      max-width: 556px;
-      margin: 2rem;
+      display: none;
     }
   }
 
@@ -301,11 +300,12 @@
     }
 
     @include for-laptop {
-      width: 170px;
+      width: 156px;
       height: 56px;
 
       & img {
-        max-height: 28px;
+        max-height: 31px;
+        max-width: 98px;
       }
     }
   }

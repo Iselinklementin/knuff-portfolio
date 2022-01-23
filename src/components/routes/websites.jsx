@@ -1,14 +1,21 @@
 import Nav from "../layout/Nav";
 import Footer from "../layout/Footer";
+import Container from "../ui/Container";
 
 export default function Websites() {
   return (
     <>
-      <div className="wrapper">
+      <div className="wrapper websites">
         <Nav />
-
-        <h1>Website</h1>
-        <div className="container">This is main</div>
+        <Container>
+          <h2>Frontend development</h2>
+          <h1>Website</h1>
+          <div className="top-icon"></div>
+          <div className="iphone"></div>
+        </Container>
+        <div className="background-container">
+          <div className="background"></div>
+        </div>
       </div>
       <Footer />
     </>

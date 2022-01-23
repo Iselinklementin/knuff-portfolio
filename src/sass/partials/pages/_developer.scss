@@ -1,0 +1,41 @@
+.websites {
+  .container {
+    @include flex(column, center, center);
+  }
+
+  h2 {
+    margin-top: 5rem;
+    margin-bottom: 0;
+  }
+
+  .top-icon {
+    background-image: url("../../../images/developer/top-icon-developer.svg");
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 105px;
+  }
+
+  .iphone {
+    background-image: url("../../../images/developer/iphone-web.png");
+    background-repeat: no-repeat;
+    width: 468px;
+    height: 312px;
+    z-index: 1;
+  }
+
+  .background-container {
+    position: relative;
+    height: 240px;
+    z-index: 0;
+
+    .background {
+      position: absolute;
+      background-image: url("../../../images/developer/developer-background.svg");
+      background-repeat: no-repeat;
+      height: 240px;
+      width: 100%;
+      top: -10rem;
+      object-fit: cover;
+    }
+  }
+}
