@@ -11,8 +11,9 @@ export default function About() {
     <>
       <div className="wrapper about-me">
         <Nav />
-        <div className="clouds"></div>
+
         <Container>
+          <div className="clouds"></div>
           <div className="intro-container">
             <Heading text="Hello!" />
             <h3>Thanks for stopping by.</h3>
