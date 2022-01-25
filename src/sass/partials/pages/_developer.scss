@@ -133,13 +133,17 @@
 
       p:first-of-type {
         max-width: 300px;
+
+        @include for-laptop {
+          font-size: 20px;
+        }
       }
 
       @include for-laptop {
         max-width: 393px;
 
         p:first-of-type {
-          max-width: 350px;
+          max-width: 355px;
         }
       }
     }

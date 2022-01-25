@@ -1185,6 +1185,13 @@ footer a {
   }
 }
 
+@media (min-width: 768px) and (min-width: 992px) {
+  .about-me .container p:first-of-type {
+    font-size: 20px;
+    max-width: 300px;
+  }
+}
+
 .about-me .container h1 {
   margin-bottom: 0;
   margin-top: 9.5rem;
@@ -1730,9 +1737,16 @@ footer a {
   .design .image-container {
     position: absolute;
     right: -3.5rem;
-    top: 7rem;
     width: 472px;
-    margin-right: 2rem;
+    margin-right: 3rem;
+    top: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .design .image-container {
+    top: 7rem;
+    width: 572px;
   }
 }
 
@@ -1751,8 +1765,15 @@ footer a {
     background-repeat: no-repeat;
     width: 159px;
     height: 72px;
-    top: 0;
     right: 10%;
+    top: 5%;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 992px) {
+  .design .image-container .clouds {
+    width: 180px;
+    height: 100px;
   }
 }
 
@@ -1822,6 +1843,12 @@ footer a {
   }
 }
 
+@media (min-width: 992px) {
+  .design .text {
+    max-width: 300px;
+  }
+}
+
 .design .text-container {
   text-align: center;
   padding: 0 2rem;
@@ -1836,6 +1863,18 @@ footer a {
   }
   .design .text-container p:first-of-type {
     max-width: 300px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 992px) {
+  .design .text-container p:first-of-type {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .design .text-container p:last-of-type {
+    width: 511px;
   }
 }
 
@@ -2044,11 +2083,17 @@ footer a {
 }
 
 @media (min-width: 768px) and (min-width: 992px) {
+  .websites .text-container p:first-of-type {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 992px) {
   .websites .text-container {
     max-width: 393px;
   }
   .websites .text-container p:first-of-type {
-    max-width: 350px;
+    max-width: 355px;
   }
 }
 /*# sourceMappingURL=style.css.map */

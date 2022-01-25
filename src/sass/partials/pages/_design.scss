@@ -38,12 +38,18 @@
 
   .image-container {
     @include flex(column, center, center);
+
     @include for-tablet {
       position: absolute;
       right: -3.5rem;
-      top: 7rem;
       width: 472px;
-      margin-right: 2rem;
+      margin-right: 3rem;
+      top: 4rem;
+    }
+
+    @include for-laptop {
+      top: 7rem;
+      width: 572px;
     }
 
     .image {
@@ -61,14 +67,13 @@
         background-repeat: no-repeat;
         width: 159px;
         height: 72px;
-        top: 0;
         right: 10%;
+        top: 5%;
 
-        // @include for-laptop {
-        //   height: 204px;
-        //   width: 148px;
-        //   margin-top: -3rem;
-        // }
+        @include for-laptop {
+          width: 180px;
+          height: 100px;
+        }
       }
     }
 
@@ -129,6 +134,10 @@
       text-align: left;
       margin: 2rem 0 1rem 0;
     }
+
+    @include for-laptop {
+      max-width: 300px;
+    }
   }
 
   .text-container {
@@ -143,6 +152,14 @@
 
       p:first-of-type {
         max-width: 300px;
+
+        @include for-laptop {
+          font-size: 20px;
+        }
+      }
+
+      p:last-of-type {
+        width: 511px;
       }
 
       @include for-laptop {
