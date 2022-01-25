@@ -2,7 +2,7 @@ import Nav from "../layout/Nav";
 import Footer from "../layout/Footer";
 import Container from "../ui/Container";
 import Mugs from "../../images/design/mugs.png";
-import { PortfolioDataMobile } from "../constant/PortfolioData";
+import { PortfolioDataMobile, PortfolioDataTablet } from "../constant/PortfolioData";
 
 export default function Portfolio() {
   return (
@@ -44,6 +44,7 @@ export default function Portfolio() {
         </Container>
 
         <PortfolioDataMobile />
+        <PortfolioDataTablet />
       </div>
       <Footer />
     </>

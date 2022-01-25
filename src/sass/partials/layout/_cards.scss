@@ -1,11 +1,19 @@
-.card-background {
-  @include flex(column, center, center);
-  position: relative;
-  padding: 3rem 0;
-  width: 90%;
-  margin: auto;
-  background-color: getColour(overlayBlue);
-  margin-top: 2rem;
+.card {
+  h3 {
+    color: getColour(yellow);
+    font-size: 20px;
+  }
+
+  ul {
+    display: flex;
+    @include reset-list;
+    color: getColour(coralPink);
+    margin-top: 20px;
+
+    li {
+      margin-right: 12px;
+    }
+  }
 
   .expand {
     position: absolute;
@@ -14,8 +22,20 @@
     background-size: cover;
     width: 18px;
     height: 18px;
-    top: 4%;
-    right: 6%;
+  }
+}
+
+.card-background-mobile {
+  @include flex(column, center, center);
+  position: relative;
+  padding: 3rem 0;
+  width: 90%;
+  margin: auto;
+  background-color: getColour(overlayBlue);
+  margin-top: 2rem;
+
+  @include for-tablet {
+    display: none;
   }
 
   .project-img {
@@ -31,15 +51,52 @@
     width: 85%;
   }
 
-  h3 {
-    color: getColour(yellow);
-    font-size: 20px;
+  .expand {
+    top: 4%;
+    right: 6%;
   }
+}
 
-  ul {
-    @include flex(row, space-between, baseline);
-    @include reset-list;
-    color: getColour(coralPink);
-    margin-top: 20px;
+// tablet
+
+.card-background-tablet {
+  @include for-tablet {
+    position: relative;
+    width: 100%;
+    text-align: left;
+
+    .card-image-container {
+      transition: all 0.3s;
+      z-index: 0;
+      padding: 1rem;
+      width: 491px;
+      background-color: getColour(overlayBlue);
+      margin-top: 2rem;
+    }
+
+    .project-img {
+      width: 100%;
+      height: 323px;
+      object-fit: cover;
+    }
+
+    .card-text-wrap {
+      transition: all 0.3s;
+      position: absolute;
+      padding: 1rem;
+      right: 0;
+      top: 24%;
+      width: 405px;
+      width: 60%;
+      height: 247px;
+      z-index: 1;
+      background-color: getColour(overlayBlue);
+    }
+
+    .expand {
+      z-index: 2;
+      top: 30%;
+      right: 6%;
+    }
   }
 }
