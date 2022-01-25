@@ -2174,6 +2174,10 @@ footer a {
   right: 6%;
 }
 
+.card-background-tablet {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .card-background-tablet {
     position: relative;
@@ -2212,6 +2216,9 @@ footer a {
     z-index: 2;
     top: 30%;
     right: 6%;
+  }
+  .card-background-tablet .card:nth-child(even) {
+    border: red solid thin;
   }
 }
 /*# sourceMappingURL=style.css.map */

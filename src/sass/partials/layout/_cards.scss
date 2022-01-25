@@ -60,6 +60,8 @@
 // tablet
 
 .card-background-tablet {
+  display: none;
+
   @include for-tablet {
     position: relative;
     width: 100%;
@@ -97,6 +99,10 @@
       z-index: 2;
       top: 30%;
       right: 6%;
+    }
+
+    .card:nth-child(even) {
+      border: red solid thin;
     }
   }
 }

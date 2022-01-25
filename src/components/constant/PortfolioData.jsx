@@ -52,7 +52,7 @@ export function PortfolioDataMobile() {
               <p>{project.description}</p>
               <ul>
                 {project.tags.map(tag => {
-                  return <li key={tag}>{tag}</li>;
+                  return <li key={"mobile" + tag}>{tag}</li>;
                 })}
               </ul>
             </div>
@@ -85,7 +85,7 @@ export function PortfolioDataTablet() {
                   <p>{project.description}</p>
                   <ul>
                     {project.tags.map(tag => {
-                      return <li key={tag}>{tag}</li>;
+                      return <li key={"tablet" + tag}>{tag}</li>;
                     })}
                   </ul>
                 </div>
