@@ -1,11 +1,28 @@
 .websites {
   .container {
     @include flex(column, center, center);
+    position: relative;
+
+    @include for-tablet {
+      @include flex(column, flex-start, baseline);
+    }
   }
 
-  h2 {
+  h1 {
+    @include for-tablet {
+      margin-top: 9rem;
+    }
+  }
+
+  .frontend {
     margin-top: 5rem;
     margin-bottom: 0;
+
+    @include for-tablet {
+      margin-top: 1rem;
+      color: getColour(green);
+      text-transform: uppercase;
+    }
   }
 
   .top-icon {
@@ -13,20 +30,56 @@
     background-repeat: no-repeat;
     width: 80px;
     height: 105px;
+
+    @include for-tablet {
+      display: none;
+    }
   }
 
-  .image {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: auto;
+  .image-container {
+    @include flex(column, center, center);
+
+    @include for-tablet {
+      position: absolute;
+      right: -3.5rem;
+      top: 7rem;
+      width: 472px;
+    }
+
+    @include for-laptop {
+      width: 620px;
+      top: 5rem;
+    }
+
+    .image {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: auto;
+    }
+
+    .image-icons {
+      @include for-tablet {
+        display: block;
+        background-image: url("../../../images/developer/heading-icons.svg");
+        background-repeat: no-repeat;
+        width: 109px;
+        height: 150px;
+        margin-top: -2.5rem;
+
+        @include for-laptop {
+          height: 204px;
+          width: 148px;
+          margin-top: -3rem;
+        }
+      }
+    }
   }
 
   .background-container {
     position: relative;
-    border: red solid thin;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
 
     @include for-tablet {
       display: none;
@@ -41,7 +94,7 @@
       top: -10rem;
 
       @include for-small-tablet-portfolio {
-        top: -12rem;
+        display: none;
       }
     }
   }
@@ -49,17 +102,46 @@
   .head-line {
     height: 93px;
     width: 12px;
-    margin: 0rem auto auto auto;
+    margin: 1rem auto auto auto;
+    z-index: 0;
+
+    @include for-small-tablet-portfolio {
+      display: none;
+    }
   }
 
   .text {
     margin-top: 2rem;
     max-width: 230px;
+    margin-bottom: 1rem;
+
+    @include for-tablet {
+      text-align: left;
+      margin: 2rem 0 1rem 0;
+    }
   }
 
   .text-container {
     text-align: center;
-    margin: auto;
     padding: 0 2rem;
+
+    @include for-tablet {
+      text-align: left;
+      margin: unset;
+      padding: 0;
+      max-width: 340px;
+
+      p:first-of-type {
+        max-width: 300px;
+      }
+
+      @include for-laptop {
+        max-width: 393px;
+
+        p:first-of-type {
+          max-width: 350px;
+        }
+      }
+    }
   }
 }
