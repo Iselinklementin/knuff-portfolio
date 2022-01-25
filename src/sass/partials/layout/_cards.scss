@@ -12,11 +12,20 @@
       @include flex(column, left, flex-start);
     }
 
-    .expand {
+    .expand,
+    .fa-github {
       left: 4%;
 
       @include for-laptop {
         left: 2%;
+      }
+    }
+
+    .fa-external-link-alt {
+      left: 12%;
+
+      @include for-laptop {
+        left: 6%;
       }
     }
 
@@ -59,6 +68,16 @@
     width: 18px;
     height: 18px;
   }
+
+  .fa-github,
+  .fa-external-link-alt {
+    position: absolute;
+    font-size: 1.6rem;
+  }
+
+  .fa-external-link-alt {
+    font-size: 1.4rem;
+  }
 }
 
 // mobile
@@ -88,9 +107,15 @@
     width: 85%;
   }
 
-  .expand {
+  .expand,
+  .fa-github {
     top: 4%;
     right: 6%;
+  }
+
+  .fa-external-link-alt {
+    top: 4.2%;
+    right: 14%;
   }
 }
 
@@ -153,10 +178,17 @@
       }
     }
 
-    .expand {
+    .expand,
+    .fa-github {
       z-index: 2;
       top: 35%;
       right: 6%;
+    }
+
+    .fa-external-link-alt {
+      z-index: 2;
+      top: 35%;
+      right: 12%;
     }
 
     .circle {
@@ -179,8 +211,13 @@
         transition: all 0.8s;
       }
 
-      .expand {
+      .expand,
+      .fa-github {
         right: 2%;
+      }
+
+      .fa-external-link-alt {
+        right: 6%;
       }
 
       ul {

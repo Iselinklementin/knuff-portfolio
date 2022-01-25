@@ -2159,14 +2159,28 @@ footer a {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .card-background-tablet:nth-child(even) .expand {
+  .card-background-tablet:nth-child(even) .expand,
+  .card-background-tablet:nth-child(even) .fa-github {
     left: 4%;
   }
 }
 
 @media (min-width: 768px) and (min-width: 992px) {
-  .card-background-tablet:nth-child(even) .expand {
+  .card-background-tablet:nth-child(even) .expand,
+  .card-background-tablet:nth-child(even) .fa-github {
     left: 2%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-background-tablet:nth-child(even) .fa-external-link-alt {
+    left: 12%;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 992px) {
+  .card-background-tablet:nth-child(even) .fa-external-link-alt {
+    left: 6%;
   }
 }
 
@@ -2208,6 +2222,16 @@ footer a {
   background-size: cover;
   width: 18px;
   height: 18px;
+}
+
+.card-project .fa-github,
+.card-project .fa-external-link-alt {
+  position: absolute;
+  font-size: 1.6rem;
+}
+
+.card-project .fa-external-link-alt {
+  font-size: 1.4rem;
 }
 
 .card-background-mobile {
@@ -2252,9 +2276,15 @@ footer a {
   width: 85%;
 }
 
-.card-background-mobile .expand {
+.card-background-mobile .expand,
+.card-background-mobile .fa-github {
   top: 4%;
   right: 6%;
+}
+
+.card-background-mobile .fa-external-link-alt {
+  top: 4.2%;
+  right: 14%;
 }
 
 .card-background-tablet {
@@ -2331,10 +2361,16 @@ footer a {
     margin-right: 0;
     margin-left: 12px;
   }
-  .card-background-tablet .expand {
+  .card-background-tablet .expand,
+  .card-background-tablet .fa-github {
     z-index: 2;
     top: 35%;
     right: 6%;
+  }
+  .card-background-tablet .fa-external-link-alt {
+    z-index: 2;
+    top: 35%;
+    right: 12%;
   }
   .card-background-tablet .circle {
     width: 13px;
@@ -2356,8 +2392,12 @@ footer a {
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
   }
-  .card-background-tablet .expand {
+  .card-background-tablet .expand,
+  .card-background-tablet .fa-github {
     right: 2%;
+  }
+  .card-background-tablet .fa-external-link-alt {
+    right: 6%;
   }
   .card-background-tablet ul {
     max-width: 290px;

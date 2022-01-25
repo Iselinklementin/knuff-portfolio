@@ -57,7 +57,9 @@ export function WebsiteDataMobile() {
       {websiteProjects.map(project => {
         return (
           <section className="card-project card-background-mobile" key={project.id}>
-            <div className="expand"></div>
+            <i className="fas fa-external-link-alt"></i>
+            <i className="fab fa-github"></i>
+
             <img src={project.src} alt="" className="project-img" />
             <div className="card-text-wrap">
               <h3>{project.name}</h3>
@@ -86,7 +88,8 @@ export function WebsiteDataTablet() {
             </div>
 
             <div className="card-text-container">
-              <div className="expand"></div>
+              <i className="fas fa-external-link-alt"></i>
+              <i className="fab fa-github"></i>
 
               <div className="card-text-wrap">
                 <div className="circle"></div>
