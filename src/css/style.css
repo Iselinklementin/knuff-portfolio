@@ -2097,12 +2097,12 @@ footer a {
   }
 }
 
-.card h3 {
+.card-project h3 {
   color: #e5b559;
   font-size: 20px;
 }
 
-.card ul {
+.card-project ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2113,11 +2113,11 @@ footer a {
   margin-top: 20px;
 }
 
-.card ul li {
+.card-project ul li {
   margin-right: 12px;
 }
 
-.card .expand {
+.card-project .expand {
   position: absolute;
   background-image: url("../../../images/design/expand.svg");
   background-repeat: no-repeat;
@@ -2180,6 +2180,7 @@ footer a {
 
 @media (min-width: 768px) {
   .card-background-tablet {
+    display: block;
     position: relative;
     width: 100%;
     text-align: left;

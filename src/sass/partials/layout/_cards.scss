@@ -1,4 +1,4 @@
-.card {
+.card-project {
   h3 {
     color: getColour(yellow);
     font-size: 20px;
@@ -63,6 +63,7 @@
   display: none;
 
   @include for-tablet {
+    display: block;
     position: relative;
     width: 100%;
     text-align: left;

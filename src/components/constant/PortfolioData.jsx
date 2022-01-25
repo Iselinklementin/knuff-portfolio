@@ -10,7 +10,11 @@ const portfolioProjects = [
     name: "Cinderella",
     description:
       "Cinderella is an international company. They want to give people an environmentally friendly solution for processing toilet waste.",
-    tags: ["Product design", "Trade Fair", "Advertising"],
+    tags: [
+      { name: "Product design", id: 1 },
+      { name: "Trade Fair", id: 2 },
+      { name: "Campaigns", id: 3 },
+    ],
     src: [Cinderella],
   },
   {
@@ -18,7 +22,11 @@ const portfolioProjects = [
     name: "Subway",
     description:
       "SUBWAY the world’s largest sandwich chain with more than 44,000 outlets around the world. They deliver quick, nutritious meals.",
-    tags: ["Business Cards", "Tags", "Advertising"],
+    tags: [
+      { name: "Business Cards", id: 4 },
+      { name: "Tags", id: 5 },
+      { name: "Ads", id: 6 },
+    ],
     src: [Subway],
   },
   {
@@ -26,7 +34,11 @@ const portfolioProjects = [
     name: "Bjerke Spekemat",
     description:
       "They produce salads, dressings and coarse pâté as well as many different types of cured meats and cold cuts. They strive to maintain high quality.",
-    tags: ["Brochure", "Product design", "Rollups"],
+    tags: [
+      { name: "Brochure", id: 7 },
+      { name: "Packaging", id: 8 },
+      { name: "Rollups", id: 9 },
+    ],
     src: [Bjerke],
   },
   {
@@ -34,7 +46,11 @@ const portfolioProjects = [
     name: "Format Eiendom",
     description:
       "Format Eiendom is an engineering company that works with development, planning, construction and sale of homes and commercial buildings.",
-    tags: ["Brochure", "Advertising", "Logodesign"],
+    tags: [
+      { name: "Advertising", id: 10 },
+      { name: "Magazines", id: 11 },
+      { name: "Logodesign", id: 12 },
+    ],
     src: [FormatEiendom],
   },
 ];
@@ -44,15 +60,16 @@ export function PortfolioDataMobile() {
     <>
       {portfolioProjects.map(project => {
         return (
-          <section className="card-background-mobile card" key={project.id}>
+          <section className="card-background-mobile card-project" key={project.id}>
             <div className="expand"></div>
             <img src={project.src} alt="" className="project-img" />
             <div className="card-text-wrap">
               <h3>{project.name}</h3>
               <p>{project.description}</p>
-              <ul>
+              <ul key={"mobile" + project.name}>
                 {project.tags.map(tag => {
-                  return <li key={"mobile" + tag}>{tag}</li>;
+                  console.log(tag);
+                  return <li key={tag.id}>{tag.name}</li>;
                 })}
               </ul>
             </div>
@@ -68,8 +85,10 @@ export function PortfolioDataTablet() {
     <>
       {portfolioProjects.map(project => {
         return (
-          <Container>
-            <section className="card-background-tablet card" key={project.id}>
+          <Container key={project.name}>
+            <section
+              className="card-background-tablet card-project"
+              key={project.id + project.name}>
               <div className="card-image-container">
                 <img src={project.src} alt="" className="project-img" />
               </div>
@@ -83,9 +102,10 @@ export function PortfolioDataTablet() {
                 <div className="card-text-wrap">
                   <h3>{project.name}</h3>
                   <p>{project.description}</p>
-                  <ul>
+                  <ul key={"tablet" + project.name}>
                     {project.tags.map(tag => {
-                      return <li key={"tablet" + tag}>{tag}</li>;
+                      console.log(tag);
+                      return <li key={tag.id}>{tag.name}</li>;
                     })}
                   </ul>
                 </div>
