@@ -44,7 +44,10 @@ export default function Portfolio() {
         </Container>
 
         <PortfolioDataMobile />
-        <PortfolioDataTablet />
+
+        <Container>
+          <PortfolioDataTablet />
+        </Container>
       </div>
       <Footer />
     </>

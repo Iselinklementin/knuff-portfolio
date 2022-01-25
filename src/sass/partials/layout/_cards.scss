@@ -1,3 +1,7 @@
+.card-project:nth-child(even) {
+  border: red solid thin;
+}
+
 .card-project {
   h3 {
     color: getColour(yellow);
@@ -100,10 +104,6 @@
       z-index: 2;
       top: 30%;
       right: 6%;
-    }
-
-    .card:nth-child(even) {
-      border: red solid thin;
     }
   }
 }

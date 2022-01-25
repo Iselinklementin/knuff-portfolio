@@ -68,7 +68,6 @@ export function PortfolioDataMobile() {
               <p>{project.description}</p>
               <ul key={"mobile" + project.name}>
                 {project.tags.map(tag => {
-                  console.log(tag);
                   return <li key={tag.id}>{tag.name}</li>;
                 })}
               </ul>
@@ -85,33 +84,30 @@ export function PortfolioDataTablet() {
     <>
       {portfolioProjects.map(project => {
         return (
-          <Container key={project.name}>
-            <section
-              className="card-background-tablet card-project"
-              key={project.id + project.name}>
-              <div className="card-image-container">
-                <img src={project.src} alt="" className="project-img" />
+          // <Container key={project.name}>
+          <section className="card-background-tablet card-project" key={project.id + project.name}>
+            <div className="card-image-container">
+              <img src={project.src} alt="" className="project-img" />
+            </div>
+
+            <div className="card-text-container">
+              <div>
+                <div className="circle"></div>
+                <div className="expand"></div>
               </div>
 
-              <div className="card-text-container">
-                <div>
-                  <div className="circle"></div>
-                  <div className="expand"></div>
-                </div>
-
-                <div className="card-text-wrap">
-                  <h3>{project.name}</h3>
-                  <p>{project.description}</p>
-                  <ul key={"tablet" + project.name}>
-                    {project.tags.map(tag => {
-                      console.log(tag);
-                      return <li key={tag.id}>{tag.name}</li>;
-                    })}
-                  </ul>
-                </div>
+              <div className="card-text-wrap">
+                <h3>{project.name}</h3>
+                <p>{project.description}</p>
+                <ul key={"tablet" + project.name}>
+                  {project.tags.map(tag => {
+                    return <li key={tag.id}>{tag.name}</li>;
+                  })}
+                </ul>
               </div>
-            </section>
-          </Container>
+            </div>
+          </section>
+          // </Container>
         );
       })}
     </>

@@ -2097,6 +2097,10 @@ footer a {
   }
 }
 
+.card-project:nth-child(even) {
+  border: red solid thin;
+}
+
 .card-project h3 {
   color: #e5b559;
   font-size: 20px;
@@ -2217,9 +2221,6 @@ footer a {
     z-index: 2;
     top: 30%;
     right: 6%;
-  }
-  .card-background-tablet .card:nth-child(even) {
-    border: red solid thin;
   }
 }
 /*# sourceMappingURL=style.css.map */
