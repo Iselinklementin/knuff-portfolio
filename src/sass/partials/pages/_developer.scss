@@ -1,4 +1,8 @@
 .websites {
+  @include for-laptop {
+    margin-bottom: 7rem;
+  }
+
   .container {
     @include flex(column, center, center);
     position: relative;
@@ -141,6 +145,7 @@
 
       @include for-laptop {
         max-width: 393px;
+        margin-bottom: 4rem;
 
         p:first-of-type {
           max-width: 355px;

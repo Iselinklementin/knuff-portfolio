@@ -2,6 +2,7 @@ import Nav from "../layout/Nav";
 import Footer from "../layout/Footer";
 import Container from "../ui/Container";
 import iPhone from "../../images/developer/iphone-web.png";
+import { WebsiteDataMobile, WebsiteDataTablet } from "../constant/WebsiteData";
 
 export default function Websites() {
   return (
@@ -40,6 +41,11 @@ export default function Websites() {
               Have a look at my school projects.
             </p>
           </div>
+        </Container>
+        <WebsiteDataMobile />
+
+        <Container>
+          <WebsiteDataTablet />
         </Container>
       </div>
 

@@ -2,7 +2,6 @@ import Cinderella from "../../images/design/projects/cinderella.jpg";
 import Subway from "../../images/design/projects/Subwayvk.jpg";
 import Bjerke from "../../images/design/projects/bjerke.jpg";
 import FormatEiendom from "../../images/design/projects/fe.jpg";
-import Container from "../ui/Container";
 
 const portfolioProjects = [
   {
@@ -25,7 +24,7 @@ const portfolioProjects = [
     tags: [
       { name: "Business Cards", id: 4 },
       { name: "Tags", id: 5 },
-      { name: "Ads", id: 6 },
+      { name: "Advertising", id: 6 },
     ],
     src: [Subway],
   },
@@ -48,7 +47,7 @@ const portfolioProjects = [
       "Format Eiendom is an engineering company that works with development, planning, construction and sale of homes and commercial buildings.",
     tags: [
       { name: "Advertising", id: 10 },
-      { name: "Magazines", id: 11 },
+      { name: "Brochure", id: 11 },
       { name: "Logodesign", id: 12 },
     ],
     src: [FormatEiendom],
@@ -60,7 +59,7 @@ export function PortfolioDataMobile() {
     <>
       {portfolioProjects.map(project => {
         return (
-          <section className="card-background-mobile card-project" key={project.id}>
+          <section className="card-project card-background-mobile" key={project.id}>
             <div className="expand"></div>
             <img src={project.src} alt="" className="project-img" />
             <div className="card-text-wrap">
@@ -84,19 +83,16 @@ export function PortfolioDataTablet() {
     <>
       {portfolioProjects.map(project => {
         return (
-          // <Container key={project.name}>
-          <section className="card-background-tablet card-project" key={project.id + project.name}>
+          <section className="card-project card-background-tablet" key={project.id + project.name}>
             <div className="card-image-container">
               <img src={project.src} alt="" className="project-img" />
             </div>
 
             <div className="card-text-container">
-              <div>
-                <div className="circle"></div>
-                <div className="expand"></div>
-              </div>
+              <div className="expand"></div>
 
               <div className="card-text-wrap">
+                <div className="circle"></div>
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <ul key={"tablet" + project.name}>
@@ -107,7 +103,6 @@ export function PortfolioDataTablet() {
               </div>
             </div>
           </section>
-          // </Container>
         );
       })}
     </>

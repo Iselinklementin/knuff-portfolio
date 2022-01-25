@@ -1650,6 +1650,12 @@ footer a {
   }
 }
 
+@media (min-width: 992px) {
+  .design {
+    margin-bottom: 7rem;
+  }
+}
+
 .design .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1736,8 +1742,8 @@ footer a {
 @media (min-width: 768px) {
   .design .image-container {
     position: absolute;
-    right: -3.5rem;
-    width: 472px;
+    right: -1rem;
+    width: 450px;
     margin-right: 3rem;
     top: 4rem;
   }
@@ -1767,6 +1773,8 @@ footer a {
     height: 72px;
     right: 10%;
     top: 5%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
 }
 
@@ -1783,10 +1791,19 @@ footer a {
     display: block;
     background-image: url("../../../images/design/square.svg");
     background-repeat: no-repeat;
-    height: 186px;
-    width: 330px;
+    height: 169px;
+    width: 300px;
     bottom: 0;
     right: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 992px) {
+  .design .image-container .background-tablet {
+    height: 186px;
+    width: 330px;
   }
 }
 
@@ -1881,9 +1898,16 @@ footer a {
 @media (min-width: 768px) and (min-width: 992px) {
   .design .text-container {
     max-width: 393px;
+    margin-bottom: 4rem;
   }
   .design .text-container p:first-of-type {
     max-width: 350px;
+  }
+}
+
+@media (min-width: 992px) {
+  .websites {
+    margin-bottom: 7rem;
   }
 }
 
@@ -2091,14 +2115,70 @@ footer a {
 @media (min-width: 768px) and (min-width: 992px) {
   .websites .text-container {
     max-width: 393px;
+    margin-bottom: 4rem;
   }
   .websites .text-container p:first-of-type {
     max-width: 355px;
   }
 }
 
-.card-project:nth-child(even) {
-  border: red solid thin;
+.card-background-tablet:nth-child(even) {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .card-background-tablet:nth-child(even) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .card-background-tablet:nth-child(even) .card-text-wrap {
+    text-align: left;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .card-background-tablet:nth-child(even) .expand {
+    left: 4%;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 992px) {
+  .card-background-tablet:nth-child(even) .expand {
+    left: 2%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-background-tablet:nth-child(even) .circle {
+    right: 5%;
+    left: unset;
+  }
+  .card-background-tablet:nth-child(even) li {
+    margin-right: 12px;
+    margin-left: 0;
+  }
 }
 
 .card-project h3 {
@@ -2147,9 +2227,8 @@ footer a {
   position: relative;
   padding: 3rem 0;
   width: 90%;
-  margin: auto;
   background-color: #112240;
-  margin-top: 2rem;
+  margin: 4rem auto;
 }
 
 @media (min-width: 768px) {
@@ -2184,19 +2263,24 @@ footer a {
 
 @media (min-width: 768px) {
   .card-background-tablet {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: relative;
     width: 100%;
     text-align: left;
-  }
-  .card-background-tablet .card-image-container {
+    margin: 2rem auto;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+  }
+  .card-background-tablet .card-image-container {
     z-index: 0;
     padding: 1rem;
-    width: 491px;
+    width: 70%;
     background-color: #112240;
     margin-top: 2rem;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
   }
   .card-background-tablet .project-img {
     width: 100%;
@@ -2205,22 +2289,78 @@ footer a {
        object-fit: cover;
   }
   .card-background-tablet .card-text-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     position: absolute;
     padding: 1rem;
     right: 0;
-    top: 24%;
-    width: 405px;
+    top: 22%;
     width: 60%;
-    height: 247px;
+    height: 250px;
     z-index: 1;
+    text-align: right;
     background-color: #112240;
+  }
+  .card-background-tablet h3 {
+    margin-top: 5rem;
+  }
+  .card-background-tablet ul {
+    margin-top: 0.7rem;
+    max-width: 170px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-size: 14px;
+  }
+  .card-background-tablet ul li {
+    margin-right: 0;
+    margin-left: 12px;
   }
   .card-background-tablet .expand {
     z-index: 2;
-    top: 30%;
+    top: 35%;
     right: 6%;
+  }
+  .card-background-tablet .circle {
+    width: 13px;
+    height: 13px;
+    border: #e5b559 1px solid;
+    border-radius: 50% 50%;
+    position: absolute;
+    left: 5%;
+    top: 8%;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 992px) {
+  .card-background-tablet .card-text-wrap {
+    width: 50%;
+  }
+  .card-background-tablet .card-image-container {
+    width: 60%;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+  .card-background-tablet .expand {
+    right: 2%;
+  }
+  .card-background-tablet ul {
+    max-width: 290px;
   }
 }
 /*# sourceMappingURL=style.css.map */

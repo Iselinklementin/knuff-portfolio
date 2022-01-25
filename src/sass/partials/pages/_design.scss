@@ -1,4 +1,8 @@
 .design {
+  @include for-laptop {
+    margin-bottom: 7rem;
+  }
+
   .container {
     @include flex(column, center, center);
     position: relative;
@@ -41,8 +45,8 @@
 
     @include for-tablet {
       position: absolute;
-      right: -3.5rem;
-      width: 472px;
+      right: -1rem;
+      width: 450px;
       margin-right: 3rem;
       top: 4rem;
     }
@@ -69,6 +73,7 @@
         height: 72px;
         right: 10%;
         top: 5%;
+        transition: all 0.3s;
 
         @include for-laptop {
           width: 180px;
@@ -83,10 +88,16 @@
         display: block;
         background-image: url("../../../images/design/square.svg");
         background-repeat: no-repeat;
-        height: 186px;
-        width: 330px;
+        height: 169px;
+        width: 300px;
         bottom: 0;
         right: 0;
+        transition: all 0.3s;
+
+        @include for-laptop {
+          height: 186px;
+          width: 330px;
+        }
       }
     }
   }
@@ -164,6 +175,7 @@
 
       @include for-laptop {
         max-width: 393px;
+        margin-bottom: 4rem;
 
         p:first-of-type {
           max-width: 350px;

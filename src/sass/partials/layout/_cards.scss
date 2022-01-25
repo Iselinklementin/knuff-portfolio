@@ -1,6 +1,38 @@
-.card-project:nth-child(even) {
-  border: red solid thin;
+// tablet, even numbers
+
+.card-background-tablet:nth-child(even) {
+  display: none;
+
+  @include for-tablet {
+    @include flex(column, center, end);
+
+    .card-text-wrap {
+      text-align: left;
+      left: 0;
+      @include flex(column, left, flex-start);
+    }
+
+    .expand {
+      left: 4%;
+
+      @include for-laptop {
+        left: 2%;
+      }
+    }
+
+    .circle {
+      right: 5%;
+      left: unset;
+    }
+
+    li {
+      margin-right: 12px;
+      margin-left: 0;
+    }
+  }
 }
+
+// global
 
 .card-project {
   h3 {
@@ -29,14 +61,15 @@
   }
 }
 
+// mobile
+
 .card-background-mobile {
   @include flex(column, center, center);
   position: relative;
   padding: 3rem 0;
   width: 90%;
-  margin: auto;
   background-color: getColour(overlayBlue);
-  margin-top: 2rem;
+  margin: 4rem auto;
 
   @include for-tablet {
     display: none;
@@ -67,18 +100,20 @@
   display: none;
 
   @include for-tablet {
-    display: block;
+    display: flex;
     position: relative;
     width: 100%;
     text-align: left;
+    margin: 2rem auto;
+    transition: all 0.3s;
 
     .card-image-container {
-      transition: all 0.3s;
       z-index: 0;
       padding: 1rem;
-      width: 491px;
+      width: 70%;
       background-color: getColour(overlayBlue);
       margin-top: 2rem;
+      transition: all 0.8s;
     }
 
     .project-img {
@@ -88,22 +123,69 @@
     }
 
     .card-text-wrap {
+      @include flex(column, right, flex-end);
       transition: all 0.3s;
       position: absolute;
       padding: 1rem;
       right: 0;
-      top: 24%;
-      width: 405px;
+      top: 22%;
       width: 60%;
-      height: 247px;
+      height: 250px;
       z-index: 1;
+      text-align: right;
       background-color: getColour(overlayBlue);
+    }
+
+    h3 {
+      margin-top: 5rem;
+    }
+
+    ul {
+      margin-top: 0.7rem;
+      max-width: 170px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      font-size: 14px;
+
+      li {
+        margin-right: 0;
+        margin-left: 12px;
+      }
     }
 
     .expand {
       z-index: 2;
-      top: 30%;
+      top: 35%;
       right: 6%;
+    }
+
+    .circle {
+      width: 13px;
+      height: 13px;
+      border: getColour(yellow) 1px solid;
+      border-radius: 50% 50%;
+      position: absolute;
+      left: 5%;
+      top: 8%;
+    }
+
+    @include for-laptop {
+      .card-text-wrap {
+        width: 50%;
+      }
+
+      .card-image-container {
+        width: 60%;
+        transition: all 0.8s;
+      }
+
+      .expand {
+        right: 2%;
+      }
+
+      ul {
+        max-width: 290px;
+      }
     }
   }
 }
