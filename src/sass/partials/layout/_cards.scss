@@ -1,0 +1,45 @@
+.card-background {
+  @include flex(column, center, center);
+  position: relative;
+  padding: 3rem 0;
+  width: 90%;
+  margin: auto;
+  background-color: getColour(overlayBlue);
+  margin-top: 2rem;
+
+  .expand {
+    position: absolute;
+    background-image: url("../../../images/design/expand.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+    top: 4%;
+    right: 6%;
+  }
+
+  .project-img {
+    width: 90%;
+    height: 343px;
+    object-fit: cover;
+    margin-top: 1rem;
+    transition: all 0.3s;
+  }
+
+  .card-text-wrap {
+    margin-top: 1rem;
+    width: 85%;
+  }
+
+  h3 {
+    color: getColour(yellow);
+    font-size: 20px;
+  }
+
+  ul {
+    @include flex(row, space-between, baseline);
+    @include reset-list;
+    color: getColour(coralPink);
+    margin-top: 20px;
+  }
+}
