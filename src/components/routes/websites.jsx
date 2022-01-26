@@ -12,7 +12,7 @@ export default function Websites() {
         <Nav />
         <Container>
           <h3 className="mobile frontend">Frontend development</h3>
-          <h1>Website</h1>
+          <h1>Websites</h1>
           <h3 className="tablet frontend">Frontend development</h3>
           <div className="top-icon"></div>
 

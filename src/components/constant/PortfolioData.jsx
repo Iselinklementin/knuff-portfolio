@@ -86,7 +86,7 @@ export function PortfolioDataMobile() {
 
 export function PortfolioDataTablet() {
   const [shouldShowModal, setShouldShowModal] = useState(false);
-  console.log(shouldShowModal);
+
   return (
     <>
       {portfolioProjects.map(project => {
@@ -111,7 +111,8 @@ export function PortfolioDataTablet() {
               </div>
             </div>
             <Modal shouldShow={shouldShowModal} onClose={() => setShouldShowModal(false)}>
-              <p className="test">testing</p>
+              <h2>Design</h2>
+              <p>{project.name}</p>
             </Modal>
           </section>
         );
