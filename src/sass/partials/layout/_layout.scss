@@ -107,3 +107,27 @@ footer {
     margin: unset;
   }
 }
+
+.links-container {
+  width: 100%;
+  @include flex(row, space-between, center);
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: getColour(green);
+    }
+  }
+
+  @include for-tablet {
+    margin-top: 7rem;
+  }
+}
+
+.design-links {
+  color: getColour(yellow);
+}
+
+.developer-links {
+  color: getColour(coralPink);
+}

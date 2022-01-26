@@ -3,6 +3,7 @@ import Footer from "../layout/Footer";
 import Container from "../ui/Container";
 import Mugs from "../../images/design/mugs.png";
 import { PortfolioDataMobile, PortfolioDataTablet } from "../constant/PortfolioData";
+import { Link } from "react-router-dom";
 
 export default function Portfolio() {
   return (
@@ -47,6 +48,17 @@ export default function Portfolio() {
 
         <Container>
           <PortfolioDataTablet />
+        </Container>
+
+        <Container>
+          <div className="links-container">
+            <Link to="/wesites" className="design-links">
+              <i className="fas fa-chevron-left"></i> Developer
+            </Link>
+            <Link to="/about" className="design-links">
+              About me <i className="fas fa-chevron-right"></i>
+            </Link>
+          </div>
         </Container>
       </div>
       <Footer />

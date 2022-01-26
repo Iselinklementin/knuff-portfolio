@@ -3,6 +3,7 @@ import Footer from "../layout/Footer";
 import Container from "../ui/Container";
 import iPhone from "../../images/developer/iphone-web.png";
 import { WebsiteDataMobile, WebsiteDataTablet } from "../constant/WebsiteData";
+import { Link } from "react-router-dom";
 
 export default function Websites() {
   return (
@@ -46,6 +47,16 @@ export default function Websites() {
 
         <Container>
           <WebsiteDataTablet />
+        </Container>
+        <Container>
+          <div className="links-container">
+            <Link to="/portfolio" className="developer-links">
+              <i className="fas fa-chevron-left"></i> Design
+            </Link>
+            <Link to="/about" className="developer-links">
+              About me <i className="fas fa-chevron-right"></i>
+            </Link>
+          </div>
         </Container>
       </div>
 

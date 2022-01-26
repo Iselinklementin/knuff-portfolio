@@ -227,12 +227,12 @@ export default function App() {
         </section>
 
         {/* Modal */}
+        {/* Dette må knappen ha: */}
 
-        <Modal shouldShow={shouldShowModal} onClose={() => setShouldShowModal(false)}>
+        {/* <Modal shouldShow={shouldShowModal} onClose={() => setShouldShowModal(false)}>
           <p className="test">testing</p>
         </Modal>
-        {/* Dette må knappen ha: */}
-        <button onClick={() => setShouldShowModal(!shouldShowModal)}>Show modal</button>
+        <button onClick={() => setShouldShowModal(!shouldShowModal)}>Show modal</button> */}
       </div>
       <Footer />
     </>

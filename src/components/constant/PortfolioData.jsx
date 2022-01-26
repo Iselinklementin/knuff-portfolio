@@ -2,6 +2,8 @@ import Cinderella from "../../images/design/projects/cinderella.jpg";
 import Subway from "../../images/design/projects/Subwayvk.jpg";
 import Bjerke from "../../images/design/projects/bjerke.jpg";
 import FormatEiendom from "../../images/design/projects/fe.jpg";
+import { useState } from "react";
+import { Modal } from "../ui/Modal";
 
 const portfolioProjects = [
   {
@@ -55,12 +57,13 @@ const portfolioProjects = [
 ];
 
 export function PortfolioDataMobile() {
+  const [shouldShowModal, setShouldShowModal] = useState(false);
   return (
     <>
       {portfolioProjects.map(project => {
         return (
           <section className="card-project card-background-mobile" key={project.id}>
-            <div className="expand"></div>
+            <div className="expand" onClick={() => setShouldShowModal(!shouldShowModal)}></div>
             <img src={project.src} alt="" className="project-img" />
             <div className="card-text-wrap">
               <h3>{project.name}</h3>
@@ -71,6 +74,9 @@ export function PortfolioDataMobile() {
                 })}
               </ul>
             </div>
+            <Modal shouldShow={shouldShowModal} onClose={() => setShouldShowModal(false)}>
+              <p className="test">testing</p>
+            </Modal>
           </section>
         );
       })}
@@ -79,6 +85,8 @@ export function PortfolioDataMobile() {
 }
 
 export function PortfolioDataTablet() {
+  const [shouldShowModal, setShouldShowModal] = useState(false);
+  console.log(shouldShowModal);
   return (
     <>
       {portfolioProjects.map(project => {
@@ -89,7 +97,7 @@ export function PortfolioDataTablet() {
             </div>
 
             <div className="card-text-container">
-              <div className="expand"></div>
+              <div className="expand" onClick={() => setShouldShowModal(!shouldShowModal)}></div>
 
               <div className="card-text-wrap">
                 <div className="circle"></div>
@@ -102,6 +110,9 @@ export function PortfolioDataTablet() {
                 </ul>
               </div>
             </div>
+            <Modal shouldShow={shouldShowModal} onClose={() => setShouldShowModal(false)}>
+              <p className="test">testing</p>
+            </Modal>
           </section>
         );
       })}
