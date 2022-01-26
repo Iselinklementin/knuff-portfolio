@@ -12,8 +12,7 @@
       @include flex(column, left, flex-start);
     }
 
-    .expand,
-    .fa-github {
+    .expand {
       left: 4%;
 
       @include for-laptop {
@@ -21,11 +20,20 @@
       }
     }
 
-    .fa-external-link-alt {
-      left: 12%;
+    .fa-github {
+      left: 2%;
+      width: 25px;
 
       @include for-laptop {
-        left: 6%;
+        left: 1%;
+      }
+    }
+
+    .open {
+      left: 8%;
+
+      @include for-laptop {
+        left: 5.5%;
       }
     }
 
@@ -69,14 +77,26 @@
     height: 18px;
   }
 
-  .fa-github,
-  .fa-external-link-alt {
+  .fa-github {
     position: absolute;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    margin: 10px;
   }
 
-  .fa-external-link-alt {
-    font-size: 1.4rem;
+  .open {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-size: cover;
+    background-image: url("../../../images/developer/open.svg");
+  }
+
+  .expand:hover,
+  .fa-github:hover,
+  .open:hover {
+    transform: scale(1.2);
+    cursor: pointer;
   }
 }
 
@@ -89,10 +109,6 @@
   width: 90%;
   background-color: getColour(overlayBlue);
   margin: 4rem auto;
-
-  @include for-tablet {
-    display: none;
-  }
 
   .project-img {
     width: 90%;
@@ -107,15 +123,23 @@
     width: 85%;
   }
 
-  .expand,
-  .fa-github {
+  .expand {
     top: 4%;
     right: 6%;
   }
 
-  .fa-external-link-alt {
-    top: 4.2%;
-    right: 14%;
+  .fa-github {
+    top: 2%;
+    right: 6%;
+  }
+
+  .open {
+    top: 2.1%;
+    right: 15%;
+  }
+
+  @include for-tablet {
+    display: none;
   }
 }
 
@@ -163,10 +187,11 @@
 
     h3 {
       margin-top: 5rem;
+      margin-bottom: 0;
     }
 
     ul {
-      margin-top: 0.7rem;
+      margin-top: 2rem;
       max-width: 170px;
       flex-wrap: wrap;
       justify-content: flex-end;
@@ -178,17 +203,22 @@
       }
     }
 
-    .expand,
-    .fa-github {
+    .expand {
       z-index: 2;
       top: 35%;
       right: 6%;
     }
 
-    .fa-external-link-alt {
+    .fa-github {
       z-index: 2;
-      top: 35%;
-      right: 12%;
+      top: 34%;
+      right: 2%;
+    }
+
+    .open {
+      z-index: 2;
+      top: 34.3%;
+      right: 8%;
     }
 
     .circle {
@@ -211,13 +241,16 @@
         transition: all 0.8s;
       }
 
-      .expand,
-      .fa-github {
+      .expand {
         right: 2%;
       }
 
-      .fa-external-link-alt {
-        right: 6%;
+      .fa-github {
+        right: 1%;
+      }
+
+      .open {
+        right: 5.5%;
       }
 
       ul {

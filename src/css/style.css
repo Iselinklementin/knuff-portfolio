@@ -2159,28 +2159,39 @@ footer a {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .card-background-tablet:nth-child(even) .expand,
-  .card-background-tablet:nth-child(even) .fa-github {
+  .card-background-tablet:nth-child(even) .expand {
     left: 4%;
   }
 }
 
 @media (min-width: 768px) and (min-width: 992px) {
-  .card-background-tablet:nth-child(even) .expand,
-  .card-background-tablet:nth-child(even) .fa-github {
+  .card-background-tablet:nth-child(even) .expand {
     left: 2%;
   }
 }
 
 @media (min-width: 768px) {
-  .card-background-tablet:nth-child(even) .fa-external-link-alt {
-    left: 12%;
+  .card-background-tablet:nth-child(even) .fa-github {
+    left: 2%;
+    width: 25px;
   }
 }
 
 @media (min-width: 768px) and (min-width: 992px) {
-  .card-background-tablet:nth-child(even) .fa-external-link-alt {
-    left: 6%;
+  .card-background-tablet:nth-child(even) .fa-github {
+    left: 1%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-background-tablet:nth-child(even) .open {
+    left: 8%;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 992px) {
+  .card-background-tablet:nth-child(even) .open {
+    left: 5.5%;
   }
 }
 
@@ -2224,14 +2235,27 @@ footer a {
   height: 18px;
 }
 
-.card-project .fa-github,
-.card-project .fa-external-link-alt {
+.card-project .fa-github {
   position: absolute;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  margin: 10px;
 }
 
-.card-project .fa-external-link-alt {
-  font-size: 1.4rem;
+.card-project .open {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  background-size: cover;
+  background-image: url("../../../images/developer/open.svg");
+}
+
+.card-project .expand:hover,
+.card-project .fa-github:hover,
+.card-project .open:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
 }
 
 .card-background-mobile {
@@ -2255,12 +2279,6 @@ footer a {
   margin: 4rem auto;
 }
 
-@media (min-width: 768px) {
-  .card-background-mobile {
-    display: none;
-  }
-}
-
 .card-background-mobile .project-img {
   width: 90%;
   height: 343px;
@@ -2276,15 +2294,25 @@ footer a {
   width: 85%;
 }
 
-.card-background-mobile .expand,
-.card-background-mobile .fa-github {
+.card-background-mobile .expand {
   top: 4%;
   right: 6%;
 }
 
-.card-background-mobile .fa-external-link-alt {
-  top: 4.2%;
-  right: 14%;
+.card-background-mobile .fa-github {
+  top: 2%;
+  right: 6%;
+}
+
+.card-background-mobile .open {
+  top: 2.1%;
+  right: 15%;
+}
+
+@media (min-width: 768px) {
+  .card-background-mobile {
+    display: none;
+  }
 }
 
 .card-background-tablet {
@@ -2346,9 +2374,10 @@ footer a {
   }
   .card-background-tablet h3 {
     margin-top: 5rem;
+    margin-bottom: 0;
   }
   .card-background-tablet ul {
-    margin-top: 0.7rem;
+    margin-top: 2rem;
     max-width: 170px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2361,16 +2390,20 @@ footer a {
     margin-right: 0;
     margin-left: 12px;
   }
-  .card-background-tablet .expand,
-  .card-background-tablet .fa-github {
+  .card-background-tablet .expand {
     z-index: 2;
     top: 35%;
     right: 6%;
   }
-  .card-background-tablet .fa-external-link-alt {
+  .card-background-tablet .fa-github {
     z-index: 2;
-    top: 35%;
-    right: 12%;
+    top: 34%;
+    right: 2%;
+  }
+  .card-background-tablet .open {
+    z-index: 2;
+    top: 34.3%;
+    right: 8%;
   }
   .card-background-tablet .circle {
     width: 13px;
@@ -2392,12 +2425,14 @@ footer a {
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
   }
-  .card-background-tablet .expand,
-  .card-background-tablet .fa-github {
+  .card-background-tablet .expand {
     right: 2%;
   }
-  .card-background-tablet .fa-external-link-alt {
-    right: 6%;
+  .card-background-tablet .fa-github {
+    right: 1%;
+  }
+  .card-background-tablet .open {
+    right: 5.5%;
   }
   .card-background-tablet ul {
     max-width: 290px;

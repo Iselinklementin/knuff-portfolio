@@ -39,7 +39,7 @@ const websiteProjects = [
     id: 4,
     name: "Milky",
     description:
-      "Semester Project our second year was to create an e-commerce website that has both customer-facing and admin sections, using Strapi API, local storage, Heroku, Cloudinary and Sass.",
+      "We was to create an e-commerce website that has both customer-facing and admin sections, using Strapi API, local storage, Heroku and Cloudinary.",
     tags: [
       { name: "Heroku", id: 7 },
       { name: "JS", id: 8 },
@@ -57,7 +57,7 @@ export function WebsiteDataMobile() {
       {websiteProjects.map(project => {
         return (
           <section className="card-project card-background-mobile" key={project.id}>
-            <i className="fas fa-external-link-alt"></i>
+            <div className="open"></div>
             <i className="fab fa-github"></i>
 
             <img src={project.src} alt="" className="project-img" />
@@ -88,7 +88,7 @@ export function WebsiteDataTablet() {
             </div>
 
             <div className="card-text-container">
-              <i className="fas fa-external-link-alt"></i>
+              <div className="open"></div>
               <i className="fab fa-github"></i>
 
               <div className="card-text-wrap">
