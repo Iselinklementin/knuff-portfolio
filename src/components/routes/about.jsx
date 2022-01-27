@@ -84,7 +84,8 @@ export default function About() {
 
           <section className="get-in-touch-container">
             <div className="contact-icon"></div>
-            <Heading text="Get in touch" class="get-in-touch-heading" />
+            <h3 className="get-in-touch-heading">Get in touch</h3>
+
             <p>
               Want to get in touch? If saying my name three times doesn’t work, you could also use these methods. My
               inbox is always open.
