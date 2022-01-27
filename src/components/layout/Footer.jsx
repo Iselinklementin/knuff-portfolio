@@ -9,7 +9,7 @@ export default function Footer() {
         Designed & built by <span>Iselin Haugen</span>
       </p>
       <p>
-        My inbox is always open // <a href="#">iselin@knuff.no</a>
+        <a href="mailto: iselin@knuff.no">iselin@knuff.no</a>
       </p>
     </footer>
   );

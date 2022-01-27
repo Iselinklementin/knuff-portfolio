@@ -2,6 +2,7 @@ import Community from "../../images/developer/projects/semesterp.jpg";
 import Gamehub from "../../images/developer/projects/gamehub.jpg";
 import Travels from "../../images/developer/projects/exam.jpg";
 import Milky from "../../images/developer/projects/milky.jpg";
+import { Link } from "react-router-dom";
 
 const websiteProjects = [
   {
@@ -14,6 +15,8 @@ const websiteProjects = [
       { name: "CSS", id: 2 },
     ],
     src: [Community],
+    weblink: "https://iselin-haugen-semesterproject1-portfolio21.netlify.app",
+    git: "https://github.com/Iselinklementin/portfolio-semesterproject1",
   },
   {
     id: 2,
@@ -22,6 +25,8 @@ const websiteProjects = [
       "Our first project using html / css. We needed to deliver a properly functioning, responsive website for the assignment brief we were given.",
     tags: [{ name: "Plain HTML / CSS", id: 3 }],
     src: [Gamehub],
+    weblink: "https://iselin-haugen-gamehub-portfolio21.netlify.app",
+    git: "https://github.com/Iselinklementin/portfolio-gamehub",
   },
   {
     id: 3,
@@ -34,6 +39,8 @@ const websiteProjects = [
       { name: "Wordpress API", id: 6 },
     ],
     src: [Travels],
+    weblink: "https://iselin-haugen-projectexam1-portfolio.netlify.app",
+    git: "https://github.com/Iselinklementin/portfolio-project-exam-1",
   },
   {
     id: 4,
@@ -47,6 +54,8 @@ const websiteProjects = [
       { name: "Cloudinary", id: 10 },
     ],
     src: [Milky],
+    weblink: "https://iselin-milky.netlify.app",
+    git: "https://github.com/Iselinklementin/sp2",
   },
 ];
 
@@ -57,8 +66,13 @@ export function WebsiteDataMobile() {
       {websiteProjects.map((project) => {
         return (
           <section className="card-project card-background-mobile" key={project.id}>
-            <div className="open"></div>
-            <i className="fab fa-github"></i>
+            <a href={project.weblink} target="_blank" rel="noreferrer noopener">
+              <div className="open"></div>
+            </a>
+
+            <a href={project.git} target="_blank" rel="noreferrer noopener">
+              <i className="fab fa-github"></i>
+            </a>
 
             <img src={project.src} alt="" className="project-img" />
             <div className="card-text-wrap">
@@ -88,8 +102,13 @@ export function WebsiteDataTablet() {
             </div>
 
             <div className="card-text-container">
-              <div className="open"></div>
-              <i className="fab fa-github"></i>
+              <a href={project.weblink} target="_blank" rel="noreferrer noopener">
+                <div className="open"></div>
+              </a>
+
+              <a href={project.git} target="_blank" rel="noreferrer noopener">
+                <i className="fab fa-github"></i>
+              </a>
 
               <div className="card-text-wrap">
                 <div className="circle"></div>

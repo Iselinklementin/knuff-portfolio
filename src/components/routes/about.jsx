@@ -91,13 +91,13 @@ export default function About() {
             </p>
 
             <div className="contact-link-container">
-              <Link to="iselin@knuff.no">
+              <a href="mailto: iselin@knuff.no">
                 <i className="far fa-envelope"></i>iselin@knuff.no
-              </Link>
+              </a>
 
-              <Link to="#">
+              <a href="https://www.linkedin.com/in/iselinhaugen" target="_blank" rel="noreferrer noopener">
                 <i className="fab fa-linkedin"></i> LinkedIn
-              </Link>
+              </a>
             </div>
           </section>
         </div>
