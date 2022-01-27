@@ -4,7 +4,7 @@
   display: none;
 
   @include for-tablet {
-    @include flex(column, center, end);
+    @include flex(column, center, flex-end);
 
     .card-text-wrap {
       text-align: left;
