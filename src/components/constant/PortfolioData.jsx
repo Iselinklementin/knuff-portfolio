@@ -99,7 +99,8 @@ export function PortfolioDataMobile() {
                 <p>
                   Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa
                   lacus cursus ligula. Quisque vel turpis a quam posuere lobortis. Nullam tincidunt, nisl eget
-                  vestibulum rhoncus, elit nisi faucibus quam.
+                  vestibulum rhoncus, elit nisi faucibus quam. Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi
+                  faucibus quam, sollicitudin posuere massa lacus cursus ligula.
                 </p>
               </section>
             </SimpleModal>
