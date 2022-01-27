@@ -49,14 +49,6 @@ footer {
   @include for-laptop {
     max-width: 960px;
   }
-
-  // @include for-desktop {
-  //   max-width: 1140px;
-  // }
-
-  // @include for-large-desktop {
-  //   max-width: 1320px;
-  // }
 }
 
 .head-line {
@@ -102,7 +94,8 @@ footer {
   margin: auto;
 
   @include for-laptop {
-    font-size: 24px;
+    // font-size: 24px;
+    font-size: 22px;
     text-align: left;
     margin: unset;
   }

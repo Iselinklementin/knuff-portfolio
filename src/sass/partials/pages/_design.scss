@@ -59,8 +59,9 @@
     .image {
       position: relative;
       z-index: 2;
-      width: 100%;
+      // width: 100%;
       height: auto;
+      width: 90%;
     }
 
     .clouds {
@@ -165,7 +166,9 @@
         max-width: 300px;
 
         @include for-laptop {
-          font-size: 20px;
+          // font-size: 20px;
+          font-size: 18px;
+          margin-top: 0rem;
         }
       }
 
@@ -178,7 +181,7 @@
         margin-bottom: 4rem;
 
         p:first-of-type {
-          max-width: 350px;
+          max-width: 345px;
         }
       }
     }
