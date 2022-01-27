@@ -10,8 +10,6 @@
   z-index: 5;
   opacity: 1;
   animation: show 0.5s ease;
-  // overflow-x: auto;
-  // overflow-y: auto;
   overflow: auto;
 
   @keyframes show {
@@ -32,12 +30,13 @@
     position: relative;
     background-color: getColour(overlayBlue);
     width: 90%;
-    height: 86%;
+    max-height: 80%;
     padding: 20px;
 
     @include for-tablet {
       width: 80%;
       height: 80%;
+      max-height: unset;
     }
 
     @include for-laptop {
@@ -46,11 +45,13 @@
   }
 
   .modal-icon {
-    background-image: url("../../../images/design/modal-icon.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 35px;
-    height: 100px;
+    @include for-tablet {
+      background-image: url("../../../images/design/modal-icon.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 35px;
+      height: 100px;
+    }
   }
 
   .modal-heading {
@@ -64,15 +65,19 @@
   .modal-image-wrapper {
     @include flex(row, space-between, normal);
     flex-wrap: wrap;
-    height: 30%;
+    height: 40%;
     max-width: 470px;
-    padding: 0 1rem 0 3rem;
-    margin-bottom: 2rem;
+    padding: 0;
+    margin: 2rem auto;
 
     @include for-tablet {
-      height: 60%;
+      height: 50%;
       padding: 0 5rem;
       max-width: unset;
+    }
+
+    @include for-laptop {
+      height: 58%;
     }
 
     .header-img {
@@ -122,7 +127,8 @@
 
   .modal-text {
     max-width: 470px;
-    padding: 0 1rem 2rem 3rem;
+    padding: 0;
+    margin: auto;
 
     @include for-tablet {
       padding: 0 5rem;
