@@ -63,9 +63,14 @@
   .modal-image-wrapper {
     @include flex(row, space-between, normal);
     flex-wrap: wrap;
-    height: 60%;
-    padding: 0 5rem;
+    height: 40%;
+    padding: 0 3rem;
     margin-bottom: 2rem;
+
+    @include for-tablet {
+      height: 60%;
+      padding: 0 5rem;
+    }
 
     .header-img {
       width: 60%;
@@ -113,7 +118,11 @@
   }
 
   .modal-text {
-    padding: 0 5rem;
+    padding: 0 3rem;
+
+    @include for-tablet {
+      padding: 0 5rem;
+    }
 
     h2 {
       margin-bottom: 0;
