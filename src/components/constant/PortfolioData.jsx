@@ -2,9 +2,10 @@ import Cinderella from "../../images/design/projects/cinderella.jpg";
 import Subway from "../../images/design/projects/Subwayvk.jpg";
 import Bjerke from "../../images/design/projects/bjerke.jpg";
 import FormatEiendom from "../../images/design/projects/fe.jpg";
-import { useState } from "react";
 import SimpleModal from "../ui/SimpleModal";
-// import { Modal } from "../ui/Modal";
+import CinderellaBrochure from "../../images/design/projects/modal/cinderella/cinderella-brochure.jpg";
+import CinderellaMockup from "../../images/design/projects/modal/cinderella/cinderella-mockup.png";
+import Posepakker from "../../images/design/projects/modal/cinderella/Posepakker.png";
 
 const portfolioProjects = [
   {
@@ -18,6 +19,9 @@ const portfolioProjects = [
       { name: "Campaigns", id: 3 },
     ],
     src: [Cinderella],
+    modal_img_1: [CinderellaBrochure],
+    modal_img_2: [CinderellaMockup],
+    modal_img_3: [Posepakker],
   },
   {
     id: 2,
@@ -30,6 +34,7 @@ const portfolioProjects = [
       { name: "Advertising", id: 6 },
     ],
     src: [Subway],
+    modal_img_1: [CinderellaBrochure],
   },
   {
     id: 3,
@@ -42,6 +47,7 @@ const portfolioProjects = [
       { name: "Rollups", id: 9 },
     ],
     src: [Bjerke],
+    modal_img_1: [CinderellaBrochure],
   },
   {
     id: 4,
@@ -54,29 +60,51 @@ const portfolioProjects = [
       { name: "Logodesign", id: 12 },
     ],
     src: [FormatEiendom],
+    modal_img_1: [CinderellaBrochure],
   },
 ];
 
 export function PortfolioDataMobile() {
-  const [shouldShowModal, setShouldShowModal] = useState(false);
+  let count = 0;
   return (
     <>
       {portfolioProjects.map((project) => {
         return (
           <section className="card-project card-background-mobile" key={project.id}>
-            {/* <div className="expand" onClick={() => setShouldShowModal(!shouldShowModal)}></div> */}
-            {/* <div className="expand"></div> */}
-            <SimpleModal>
-              <h2>{project.name}</h2>
-              <p>
-                Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa
-                lacus cursus ligula. Quisque vel turpis a quam posuere lobortis.
-              </p>
-              <p>
-                Aenean risus nunc, pretium eu massa tincidunt, dignissim tincidunt arcu. Integer et mauris vestibulum,
-                pharetra eros nec, feugiat orci.
-              </p>
+            <SimpleModal key={project.name}>
+              {project.tags.map((tag) => {
+                count++;
+                if (count === 1 || count === 4 || count === 7 || count === 10) {
+                  return (
+                    <h3 className="modal-heading" key={tag.id}>
+                      {tag.name}
+                    </h3>
+                  );
+                }
+              })}
+              <div className="modal-icon"></div>
+              <div className="modal-image-wrapper">
+                <figure className="header-img">
+                  <img src={project.modal_img_1} alt="" className="modal-img" />
+                </figure>
+
+                <figure className="modal-images-container">
+                  <img src={project.modal_img_2} alt="" className="modal-img img-two" />
+                  <img src={project.modal_img_3} alt="" className="modal-img img-three" />
+                </figure>
+              </div>
+
+              <section className="modal-text">
+                <h2>{project.name}</h2>
+                <p>
+                  Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa
+                  lacus cursus ligula. Quisque vel turpis a quam posuere lobortis. Nullam tincidunt, nisl eget
+                  vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa lacus cursus ligula. Quisque
+                  vel turpis a quam posuere lobortis.
+                </p>
+              </section>
             </SimpleModal>
+
             <img src={project.src} alt="" className="project-img" />
             <div className="card-text-wrap">
               <h3>{project.name}</h3>
@@ -95,8 +123,7 @@ export function PortfolioDataMobile() {
 }
 
 export function PortfolioDataTablet() {
-  // const [shouldShowModal, setShouldShowModal] = useState(false);
-
+  let count = 0;
   return (
     <>
       {portfolioProjects.map((project) => {
@@ -107,16 +134,38 @@ export function PortfolioDataTablet() {
             </div>
 
             <div className="card-text-container">
-              <SimpleModal>
-                <h2>{project.name}</h2>
-                <p>
-                  Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa
-                  lacus cursus ligula. Quisque vel turpis a quam posuere lobortis.
-                </p>
-                <p>
-                  Aenean risus nunc, pretium eu massa tincidunt, dignissim tincidunt arcu. Integer et mauris vestibulum,
-                  pharetra eros nec, feugiat orci.
-                </p>
+              <SimpleModal key={project.name}>
+                {project.tags.map((tag) => {
+                  count++;
+                  if (count === 1 || count === 4 || count === 7 || count === 10) {
+                    return (
+                      <h3 className="modal-heading" key={tag.id}>
+                        {tag.name}
+                      </h3>
+                    );
+                  }
+                })}
+                <div className="modal-icon"></div>
+                <div className="modal-image-wrapper">
+                  <figure className="header-img">
+                    <img src={project.modal_img_1} alt="" className="modal-img" />
+                  </figure>
+
+                  <figure className="modal-images-container">
+                    <img src={project.modal_img_2} alt="" className="modal-img img-two" />
+                    <img src={project.modal_img_3} alt="" className="modal-img img-three" />
+                  </figure>
+                </div>
+
+                <section className="modal-text">
+                  <h2>{project.name}</h2>
+                  <p>
+                    Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa
+                    lacus cursus ligula. Quisque vel turpis a quam posuere lobortis. Nullam tincidunt, nisl eget
+                    vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa lacus cursus ligula. Quisque
+                    vel turpis a quam posuere lobortis.
+                  </p>
+                </section>
               </SimpleModal>
 
               <div className="card-text-wrap">

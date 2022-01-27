@@ -13,7 +13,7 @@
     }
 
     .expand {
-      left: 4%;
+      left: 3%;
 
       @include for-laptop {
         left: 2%;
@@ -54,7 +54,11 @@
 .card-project {
   h3 {
     color: getColour(yellow);
-    font-size: 20px;
+    font-size: 1rem;
+  }
+
+  .card-heading {
+    color: getColour(green);
   }
 
   ul {
@@ -62,6 +66,7 @@
     @include reset-list;
     color: getColour(coralPink);
     margin-top: 20px;
+    flex-wrap: wrap;
 
     li {
       margin-right: 12px;
@@ -171,6 +176,10 @@
       object-fit: cover;
     }
 
+    .card-heading {
+      color: getColour(green);
+    }
+
     .card-text-wrap {
       @include flex(column, right, flex-end);
       transition: all 0.3s;
@@ -205,19 +214,19 @@
 
     .expand {
       z-index: 2;
-      top: 35%;
-      right: 6%;
+      top: 33%;
+      right: 3%;
     }
 
     .fa-github {
       z-index: 2;
-      top: 34%;
+      top: 31%;
       right: 2%;
     }
 
     .open {
       z-index: 2;
-      top: 34.3%;
+      top: 31.3%;
       right: 8%;
     }
 

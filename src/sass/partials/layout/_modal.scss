@@ -1,16 +1,17 @@
 .modal-background {
+  @include flex(column, center, center);
   position: fixed;
   z-index: 5;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: "rgba(0, 0, 0, 0.7)";
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 5;
   opacity: 1;
-  animation: "$show .5s ease";
-  overflow-x: "hidden";
-  overflow-y: "auto";
+  animation: show 0.5s ease;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   @keyframes show {
     0% {
@@ -27,14 +28,100 @@
   }
 
   .modal-body {
-    background-color: white;
-    margin: 10% auto;
+    position: relative;
+    background-color: getColour(overlayBlue);
+    width: 90%;
+    height: 86%;
     padding: 20px;
-    width: 50%;
-    color: black;
+
+    @include for-tablet {
+      width: 80%;
+      height: 80%;
+    }
+
+    @include for-laptop {
+      max-width: 890px;
+    }
+  }
+
+  .modal-icon {
+    background-image: url("../../../images/design/modal-icon.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 35px;
+    height: 100px;
+  }
+
+  .modal-heading {
+    color: getColour(green);
+    padding-bottom: 15px;
+    border-bottom: getColour(green) 1px solid;
+    margin-top: unset;
+    margin-bottom: 2rem;
+  }
+
+  .modal-image-wrapper {
+    @include flex(row, space-between, normal);
+    flex-wrap: wrap;
+    height: 60%;
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+
+    .header-img {
+      width: 60%;
+      height: 100%;
+      object-fit: cover;
+      margin: 0;
+    }
+
+    .modal-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .modal-images-container {
+      @include flex(column, space-between, baseline);
+      width: 37%;
+      height: 100%;
+      object-fit: cover;
+      margin: 0;
+    }
+
+    .img-two,
+    .img-three {
+      width: 100%;
+      height: 47%;
+      object-fit: contain;
+      background-color: #d2d7e0;
+    }
+  }
+
+  .close {
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    color: getColour(yellow);
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+
+  .modal-text {
+    padding: 0 5rem;
+
+    h2 {
+      margin-bottom: 0;
+      color: getColour(yellow);
+    }
+
+    p {
+      font-size: 14px;
+    }
   }
 }
-
-// .modal-wrap {
-//   border: red solid thin;
-// }
