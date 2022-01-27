@@ -3,7 +3,8 @@ import Subway from "../../images/design/projects/Subwayvk.jpg";
 import Bjerke from "../../images/design/projects/bjerke.jpg";
 import FormatEiendom from "../../images/design/projects/fe.jpg";
 import { useState } from "react";
-import { Modal } from "../ui/Modal";
+import SimpleModal from "../ui/SimpleModal";
+// import { Modal } from "../ui/Modal";
 
 const portfolioProjects = [
   {
@@ -60,23 +61,32 @@ export function PortfolioDataMobile() {
   const [shouldShowModal, setShouldShowModal] = useState(false);
   return (
     <>
-      {portfolioProjects.map(project => {
+      {portfolioProjects.map((project) => {
         return (
           <section className="card-project card-background-mobile" key={project.id}>
-            <div className="expand" onClick={() => setShouldShowModal(!shouldShowModal)}></div>
+            {/* <div className="expand" onClick={() => setShouldShowModal(!shouldShowModal)}></div> */}
+            {/* <div className="expand"></div> */}
+            <SimpleModal>
+              <h2>{project.name}</h2>
+              <p>
+                Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa
+                lacus cursus ligula. Quisque vel turpis a quam posuere lobortis.
+              </p>
+              <p>
+                Aenean risus nunc, pretium eu massa tincidunt, dignissim tincidunt arcu. Integer et mauris vestibulum,
+                pharetra eros nec, feugiat orci.
+              </p>
+            </SimpleModal>
             <img src={project.src} alt="" className="project-img" />
             <div className="card-text-wrap">
               <h3>{project.name}</h3>
               <p>{project.description}</p>
               <ul key={"mobile" + project.name}>
-                {project.tags.map(tag => {
+                {project.tags.map((tag) => {
                   return <li key={tag.id}>{tag.name}</li>;
                 })}
               </ul>
             </div>
-            <Modal shouldShow={shouldShowModal} onClose={() => setShouldShowModal(false)}>
-              <p className="test">testing</p>
-            </Modal>
           </section>
         );
       })}
@@ -85,11 +95,11 @@ export function PortfolioDataMobile() {
 }
 
 export function PortfolioDataTablet() {
-  const [shouldShowModal, setShouldShowModal] = useState(false);
+  // const [shouldShowModal, setShouldShowModal] = useState(false);
 
   return (
     <>
-      {portfolioProjects.map(project => {
+      {portfolioProjects.map((project) => {
         return (
           <section className="card-project card-background-tablet" key={project.id + project.name}>
             <div className="card-image-container">
@@ -97,23 +107,29 @@ export function PortfolioDataTablet() {
             </div>
 
             <div className="card-text-container">
-              <div className="expand" onClick={() => setShouldShowModal(!shouldShowModal)}></div>
+              <SimpleModal>
+                <h2>{project.name}</h2>
+                <p>
+                  Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa
+                  lacus cursus ligula. Quisque vel turpis a quam posuere lobortis.
+                </p>
+                <p>
+                  Aenean risus nunc, pretium eu massa tincidunt, dignissim tincidunt arcu. Integer et mauris vestibulum,
+                  pharetra eros nec, feugiat orci.
+                </p>
+              </SimpleModal>
 
               <div className="card-text-wrap">
                 <div className="circle"></div>
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <ul key={"tablet" + project.name}>
-                  {project.tags.map(tag => {
+                  {project.tags.map((tag) => {
                     return <li key={tag.id}>{tag.name}</li>;
                   })}
                 </ul>
               </div>
             </div>
-            <Modal shouldShow={shouldShowModal} onClose={() => setShouldShowModal(false)}>
-              <h2>Design</h2>
-              <p>{project.name}</p>
-            </Modal>
           </section>
         );
       })}
