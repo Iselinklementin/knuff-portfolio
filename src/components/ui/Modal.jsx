@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import isNil from "lodash/fp/isNil";
 
 const Modal = ({ onCloseRequest, children }) => {
-  // const classes = useStyles();
   const modal = useRef(null);
 
   const handleKeyUp = useCallback(
