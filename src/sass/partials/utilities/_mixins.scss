@@ -31,6 +31,11 @@
     @content;
   }
 }
+@mixin for-tablet-pro {
+  @media (min-width: $tablet-pro) {
+    @content;
+  }
+}
 @mixin for-desktop {
   @media (min-width: $desktop-width) {
     @content;

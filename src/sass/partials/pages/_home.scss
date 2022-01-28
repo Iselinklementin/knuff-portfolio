@@ -90,6 +90,10 @@
       right: -7rem;
     }
 
+    @include for-tablet-pro {
+      right: -5rem;
+    }
+
     @include for-large-desktop {
       right: -14rem;
       top: -5rem;
@@ -157,6 +161,10 @@
       @include for-laptop {
         font-size: 24px;
         font-size: 22px;
+      }
+
+      @include for-tablet-pro {
+        max-width: 370px;
       }
     }
 

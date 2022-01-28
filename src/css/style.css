@@ -831,6 +831,12 @@ footer a {
   }
 }
 
+@media (min-width: 1024px) {
+  .index .image-container {
+    right: -5rem;
+  }
+}
+
 @media (min-width: 1400px) {
   .index .image-container {
     right: -14rem;
@@ -932,6 +938,12 @@ footer a {
   .index .intro-section p:first-of-type {
     font-size: 24px;
     font-size: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .index .intro-section p:first-of-type {
+    max-width: 370px;
   }
 }
 
