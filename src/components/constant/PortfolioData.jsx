@@ -12,6 +12,9 @@ import BjerkeA4 from "../../images/design/projects/modal/bjerke/Bjerke-A4-Flyer.
 import Skagenrore from "../../images/design/projects/modal/bjerke/skagenrore.jpg";
 import FeMag from "../../images/design/projects/modal/fe/fe-magazine-1.jpg";
 import FeMagBok from "../../images/design/projects/modal/fe/fe-magazine-2.jpg";
+import Rollups from "../../images/design/projects/modal/h&l/rollups.jpg";
+import hl_flyer from "../../images/design/projects/modal/h&l/h&l-flyer.jpg";
+import hl_mac from "../../images/design/projects/modal/h&l/mockup-web.jpg";
 
 const portfolioProjects = [
   {
@@ -35,12 +38,14 @@ const portfolioProjects = [
     description:
       "In their popular climbing parks, you get mastery and learning in the treetops. Exciting, action-packed activities for all ages and skills.",
     tags: [
-      { name: "Flyers", id: 4 },
-      { name: "Rollups", id: 5 },
+      { name: "Rollups", id: 4 },
+      { name: "Flyers", id: 5 },
       { name: "Advertising", id: 6 },
     ],
     src: [hoytlavt],
-    modal_img_1: [CinderellaBrochure],
+    modal_img_1: [Rollups],
+    modal_img_2: [hl_flyer],
+    modal_img_3: [hl_mac],
   },
   {
     id: 3,
@@ -63,8 +68,8 @@ const portfolioProjects = [
     description:
       "Format Eiendom is an engineering company that works with development, planning, construction and sale of homes and commercial buildings.",
     tags: [
-      { name: "Advertising", id: 10 },
-      { name: "Brochure", id: 11 },
+      { name: "Brochure", id: 10 },
+      { name: "Advertising", id: 11 },
       { name: "Logodesign", id: 12 },
     ],
     src: [FormatEiendom],
