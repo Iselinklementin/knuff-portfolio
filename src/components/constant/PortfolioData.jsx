@@ -10,6 +10,7 @@ import FeMagazine from "../../images/design/projects/modal/fe/fe-magazine.jpg";
 import BjerkePopup from "../../images/design/projects/modal/bjerke/popup.jpg";
 import BjerkeA4 from "../../images/design/projects/modal/bjerke/Bjerke-A4-Flyer.jpg";
 import Skagenrore from "../../images/design/projects/modal/bjerke/skagenrore.jpg";
+import FeMag from "../../images/design/projects/modal/fe/fe-magazine-1.jpg";
 
 const portfolioProjects = [
   {
@@ -66,7 +67,8 @@ const portfolioProjects = [
       { name: "Logodesign", id: 12 },
     ],
     src: [FormatEiendom],
-    modal_img_1: [FeMagazine],
+    modal_img_1: [FeMag],
+    modal_img_2: [FeMagazine],
   },
 ];
 
