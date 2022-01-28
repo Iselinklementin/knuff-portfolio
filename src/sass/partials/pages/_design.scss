@@ -60,7 +60,8 @@
       position: relative;
       z-index: 2;
       height: auto;
-      width: 90%;
+      width: 100%;
+      top: 1rem;
     }
 
     .clouds {
@@ -118,7 +119,7 @@
       min-height: 438px;
       width: 100%;
       // top: -12rem;
-      top: -8rem;
+      top: -7rem;
 
       @include for-small-tablet-portfolio {
         display: none;

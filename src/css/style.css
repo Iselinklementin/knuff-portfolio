@@ -2024,7 +2024,8 @@ footer a {
   position: relative;
   z-index: 2;
   height: auto;
-  width: 90%;
+  width: 100%;
+  top: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -2089,7 +2090,7 @@ footer a {
   background-repeat: no-repeat;
   min-height: 438px;
   width: 100%;
-  top: -8rem;
+  top: -7rem;
 }
 
 @media (min-width: 460px) {
