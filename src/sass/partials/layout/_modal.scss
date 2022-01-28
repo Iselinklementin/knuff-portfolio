@@ -63,6 +63,10 @@
     border-bottom: getColour(green) 1px solid;
     margin-top: unset;
     margin-bottom: 2rem;
+
+    @include for-tablet {
+      font-size: 1.4rem;
+    }
   }
 
   .modal-image-wrapper {

@@ -558,6 +558,12 @@ footer a {
   margin-bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+  .modal-background .modal-heading {
+    font-size: 1.4rem;
+  }
+}
+
 .modal-background .modal-image-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
