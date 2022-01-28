@@ -517,7 +517,7 @@ footer a {
   position: relative;
   background-color: #112240;
   width: 90%;
-  max-height: 90%;
+  height: 90%;
   padding: 20px;
 }
 
@@ -525,7 +525,6 @@ footer a {
   .modal-background .modal-body {
     width: 80%;
     height: 80%;
-    max-height: unset;
   }
 }
 

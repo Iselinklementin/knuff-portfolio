@@ -30,13 +30,12 @@
     position: relative;
     background-color: getColour(overlayBlue);
     width: 90%;
-    max-height: 90%;
+    height: 90%;
     padding: 20px;
 
     @include for-tablet {
       width: 80%;
       height: 80%;
-      max-height: unset;
     }
 
     @include for-laptop {
