@@ -59,7 +59,6 @@
     .image {
       position: relative;
       z-index: 2;
-      // width: 100%;
       height: auto;
       width: 90%;
     }
@@ -118,7 +117,8 @@
       background-repeat: no-repeat;
       min-height: 438px;
       width: 100%;
-      top: -12rem;
+      // top: -12rem;
+      top: -8rem;
 
       @include for-small-tablet-portfolio {
         display: none;
@@ -129,8 +129,12 @@
   .head-line {
     height: 93px;
     width: 12px;
-    margin: -2rem auto auto auto;
+    margin: 0 auto auto auto;
     z-index: 0;
+
+    @media (min-width: 400px) {
+      width: 0;
+    }
 
     @include for-small-tablet-portfolio {
       display: none;

@@ -43,7 +43,7 @@
 }
 
 @mixin for-small-tablet-portfolio {
-  @media (min-width: 480px) {
+  @media (min-width: 460px) {
     @content;
   }
 }
