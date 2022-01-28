@@ -524,7 +524,7 @@ footer a {
 @media (min-width: 768px) {
   .modal-background .modal-body {
     width: 80%;
-    height: 80%;
+    height: 90%;
   }
 }
 
@@ -536,7 +536,7 @@ footer a {
 
 @media (min-width: 1200px) {
   .modal-background .modal-body {
-    max-height: 70%;
+    max-height: 95%;
   }
 }
 
@@ -759,6 +759,12 @@ footer a {
   .index .home-introduction-heading {
     max-width: 500px;
     margin-top: -2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .index .home-introduction-heading {
+    margin-top: 3rem;
   }
 }
 
