@@ -1,5 +1,5 @@
 import Cinderella from "../../images/design/projects/cinderella.jpg";
-import Subway from "../../images/design/projects/Subwayvk.jpg";
+import hoytlavt from "../../images/design/projects/h&l.jpg";
 import Bjerke from "../../images/design/projects/bjerke.jpg";
 import FormatEiendom from "../../images/design/projects/fe.jpg";
 import SimpleModal from "../ui/SimpleModal";
@@ -11,6 +11,7 @@ import BjerkePopup from "../../images/design/projects/modal/bjerke/popup.jpg";
 import BjerkeA4 from "../../images/design/projects/modal/bjerke/Bjerke-A4-Flyer.jpg";
 import Skagenrore from "../../images/design/projects/modal/bjerke/skagenrore.jpg";
 import FeMag from "../../images/design/projects/modal/fe/fe-magazine-1.jpg";
+import FeMagBok from "../../images/design/projects/modal/fe/fe-magazine-2.jpg";
 
 const portfolioProjects = [
   {
@@ -30,15 +31,15 @@ const portfolioProjects = [
   },
   {
     id: 2,
-    name: "Subway",
+    name: "Høyt & Lavt",
     description:
-      "SUBWAY the world’s largest sandwich chain with more than 44,000 outlets around the world. They deliver quick, nutritious meals.",
+      "In their popular climbing parks, you get mastery and learning in the treetops. Exciting, action-packed activities for all ages and skills.",
     tags: [
-      { name: "Business Cards", id: 4 },
-      { name: "Tags", id: 5 },
+      { name: "Flyers", id: 4 },
+      { name: "Rollups", id: 5 },
       { name: "Advertising", id: 6 },
     ],
-    src: [Subway],
+    src: [hoytlavt],
     modal_img_1: [CinderellaBrochure],
   },
   {
@@ -47,8 +48,8 @@ const portfolioProjects = [
     description:
       "They produce salads, dressings and coarse pâté as well as many different types of cured meats and cold cuts. They strive to maintain high quality.",
     tags: [
-      { name: "Brochure", id: 7 },
-      { name: "Packaging", id: 8 },
+      { name: "Packaging", id: 7 },
+      { name: "Brochure", id: 8 },
       { name: "Rollups", id: 9 },
     ],
     src: [Bjerke],
@@ -69,6 +70,7 @@ const portfolioProjects = [
     src: [FormatEiendom],
     modal_img_1: [FeMag],
     modal_img_2: [FeMagazine],
+    modal_img_3: [FeMagBok],
   },
 ];
 
