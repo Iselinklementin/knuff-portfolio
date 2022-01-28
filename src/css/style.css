@@ -1589,6 +1589,18 @@ footer a {
   }
 }
 
+@media (min-width: 1024px) {
+  .about-me .me-container {
+    margin-right: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-me .me-container {
+    margin-right: 0;
+  }
+}
+
 .about-me .me-container .card-img {
   -o-object-position: 50% 15%;
      object-position: 50% 15%;
@@ -2034,6 +2046,12 @@ footer a {
   .design .image-container {
     top: 7rem;
     width: 572px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .design .image-container {
+    top: 5rem;
   }
 }
 
