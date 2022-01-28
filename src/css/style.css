@@ -517,7 +517,7 @@ footer a {
   position: relative;
   background-color: #112240;
   width: 90%;
-  max-height: 80%;
+  max-height: 90%;
   padding: 20px;
 }
 
@@ -676,11 +676,13 @@ footer a {
 
 .modal-background .modal-text p {
   font-size: 14px;
+  line-height: 1.2;
 }
 
 @media (min-width: 768px) {
   .modal-background .modal-text p {
     font-size: 1rem;
+    line-height: 1.5;
   }
 }
 
