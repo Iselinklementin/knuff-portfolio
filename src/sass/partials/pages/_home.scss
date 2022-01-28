@@ -127,14 +127,15 @@
       text-transform: uppercase;
     }
 
-    .welcome-line {
-      background-image: url("../../../images/home/iMac-line.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      height: 120px;
-      width: 36px;
-      margin-right: 3rem;
-    }
+    // .welcome-line {
+    //   display: none;
+    //   background-image: url("../../../images/home/iMac-line.svg");
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    //   height: 120px;
+    //   width: 36px;
+    //   margin-right: 3rem;
+    // }
   }
 
   .intro-section {

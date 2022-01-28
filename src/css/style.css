@@ -876,15 +876,6 @@ footer a {
   text-transform: uppercase;
 }
 
-.index .image-container .welcome-line {
-  background-image: url("../../../images/home/iMac-line.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 120px;
-  width: 36px;
-  margin-right: 3rem;
-}
-
 .index .intro-section {
   display: -webkit-box;
   display: -ms-flexbox;
