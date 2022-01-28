@@ -7,6 +7,9 @@ import CinderellaBrochure from "../../images/design/projects/modal/cinderella/ci
 import CinderellaMockup from "../../images/design/projects/modal/cinderella/cinderella-mockup.png";
 import Posepakker from "../../images/design/projects/modal/cinderella/Posepakker.png";
 import FeMagazine from "../../images/design/projects/modal/fe/fe-magazine.jpg";
+import BjerkePopup from "../../images/design/projects/modal/bjerke/popup.jpg";
+import BjerkeA4 from "../../images/design/projects/modal/bjerke/Bjerke-A4-Flyer.jpg";
+import Skagenrore from "../../images/design/projects/modal/bjerke/skagenrore.jpg";
 
 const portfolioProjects = [
   {
@@ -48,7 +51,9 @@ const portfolioProjects = [
       { name: "Rollups", id: 9 },
     ],
     src: [Bjerke],
-    modal_img_1: [CinderellaBrochure],
+    modal_img_1: [BjerkePopup],
+    modal_img_2: [BjerkeA4],
+    modal_img_3: [Skagenrore],
   },
   {
     id: 4,
