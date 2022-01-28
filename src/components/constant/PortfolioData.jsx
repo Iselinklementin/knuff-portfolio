@@ -6,6 +6,7 @@ import SimpleModal from "../ui/SimpleModal";
 import CinderellaBrochure from "../../images/design/projects/modal/cinderella/cinderella-brochure.jpg";
 import CinderellaMockup from "../../images/design/projects/modal/cinderella/cinderella-mockup.png";
 import Posepakker from "../../images/design/projects/modal/cinderella/Posepakker.png";
+import FeMagazine from "../../images/design/projects/modal/fe/fe-magazine.jpg";
 
 const portfolioProjects = [
   {
@@ -60,7 +61,7 @@ const portfolioProjects = [
       { name: "Logodesign", id: 12 },
     ],
     src: [FormatEiendom],
-    modal_img_1: [CinderellaBrochure],
+    modal_img_1: [FeMagazine],
   },
 ];
 
@@ -68,11 +69,11 @@ export function PortfolioDataMobile() {
   let count = 0;
   return (
     <>
-      {portfolioProjects.map((project) => {
+      {portfolioProjects.map(project => {
         return (
           <section className="card-project card-background-mobile" key={project.id}>
             <SimpleModal key={project.name}>
-              {project.tags.map((tag) => {
+              {project.tags.map(tag => {
                 count++;
                 if (count === 1 || count === 4 || count === 7 || count === 10) {
                   return (
@@ -97,10 +98,11 @@ export function PortfolioDataMobile() {
               <section className="modal-text">
                 <h2>{project.name}</h2>
                 <p>
-                  Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa
-                  lacus cursus ligula. Quisque vel turpis a quam posuere lobortis. Nullam tincidunt, nisl eget
-                  vestibulum rhoncus, elit nisi faucibus quam. Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi
-                  faucibus quam, sollicitudin posuere massa lacus cursus ligula.
+                  Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam,
+                  sollicitudin posuere massa lacus cursus ligula. Quisque vel turpis a quam posuere
+                  lobortis. Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam.
+                  Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam,
+                  sollicitudin posuere massa lacus cursus ligula.
                 </p>
               </section>
             </SimpleModal>
@@ -110,7 +112,7 @@ export function PortfolioDataMobile() {
               <h3>{project.name}</h3>
               <p>{project.description}</p>
               <ul key={"mobile" + project.name}>
-                {project.tags.map((tag) => {
+                {project.tags.map(tag => {
                   return <li key={tag.id}>{tag.name}</li>;
                 })}
               </ul>
@@ -126,7 +128,7 @@ export function PortfolioDataTablet() {
   let count = 0;
   return (
     <>
-      {portfolioProjects.map((project) => {
+      {portfolioProjects.map(project => {
         return (
           <section className="card-project card-background-tablet" key={project.id + project.name}>
             <div className="card-image-container">
@@ -135,7 +137,7 @@ export function PortfolioDataTablet() {
 
             <div className="card-text-container">
               <SimpleModal key={project.name}>
-                {project.tags.map((tag) => {
+                {project.tags.map(tag => {
                   count++;
                   if (count === 1 || count === 4 || count === 7 || count === 10) {
                     return (
@@ -160,10 +162,11 @@ export function PortfolioDataTablet() {
                 <section className="modal-text">
                   <h2>{project.name}</h2>
                   <p>
-                    Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa
-                    lacus cursus ligula. Quisque vel turpis a quam posuere lobortis. Nullam tincidunt, nisl eget
-                    vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa lacus cursus ligula. Quisque
-                    vel turpis a quam posuere lobortis.
+                    Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam,
+                    sollicitudin posuere massa lacus cursus ligula. Quisque vel turpis a quam
+                    posuere lobortis. Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi
+                    faucibus quam, sollicitudin posuere massa lacus cursus ligula. Quisque vel
+                    turpis a quam posuere lobortis.
                   </p>
                 </section>
               </SimpleModal>
@@ -173,7 +176,7 @@ export function PortfolioDataTablet() {
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <ul key={"tablet" + project.name}>
-                  {project.tags.map((tag) => {
+                  {project.tags.map(tag => {
                     return <li key={tag.id}>{tag.name}</li>;
                   })}
                 </ul>

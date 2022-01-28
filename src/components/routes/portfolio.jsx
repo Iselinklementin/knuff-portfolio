@@ -1,9 +1,9 @@
 import Nav from "../layout/Nav";
+import { Link } from "react-router-dom";
 import Footer from "../layout/Footer";
 import Container from "../ui/Container";
 import Mugs from "../../images/design/mugs.png";
 import { PortfolioDataMobile, PortfolioDataTablet } from "../constant/PortfolioData";
-import { Link } from "react-router-dom";
 
 export default function Portfolio() {
   return (
