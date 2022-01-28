@@ -1,4 +1,3 @@
-// import React from "react";
 import React, { useState, useEffect } from "react";
 
 function Loader() {
@@ -18,9 +17,6 @@ function Loader() {
     });
   }, []);
 
-  // if (isLoading) {
-  //   return null;
-  // }
   return (
     <div className="loading-container loader-container">
       <svg>
