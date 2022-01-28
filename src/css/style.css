@@ -561,6 +561,7 @@ footer a {
 @media (min-width: 768px) {
   .modal-background .modal-heading {
     font-size: 1.4rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -659,6 +660,12 @@ footer a {
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media (min-width: 1024px) {
+  .modal-background .close {
+    top: 2%;
+  }
 }
 
 .modal-background .modal-text {

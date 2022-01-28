@@ -66,6 +66,7 @@
 
     @include for-tablet {
       font-size: 1.4rem;
+      margin-bottom: 3rem;
     }
   }
 
@@ -129,6 +130,10 @@
     &:hover {
       cursor: pointer;
       transform: scale(1.1);
+    }
+
+    @include for-tablet-pro {
+      top: 2%;
     }
   }
 
