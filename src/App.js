@@ -4,13 +4,12 @@ import Nav from "./components/layout/Nav";
 import Bird from "./images/home/bird.jpg";
 import Manet from "./images/home/manet.jpg";
 import Me from "./images/about-me.jpg";
-// import React from "react";
 import List from "./components/ui/List";
 import Container from "./components/ui/Container";
 import Heading from "./components/ui/Heading";
 import { Link } from "react-router-dom";
 import Loader from "./components/ui/Loader";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 export default function App() {
   const designList = [
@@ -21,25 +20,6 @@ export default function App() {
     "Procreate",
   ];
   const developerList = ["Sass", "React", "Bootstrap", "WordPress API", "Strapi API"];
-
-  const [isLoading, setLoading] = useState(true);
-  function fakeRequest() {
-    return new Promise(resolve => setTimeout(() => resolve(), 1200));
-  }
-
-  useEffect(() => {
-    fakeRequest().then(() => {
-      const el = document.querySelector(".loader-container");
-      if (el) {
-        el.remove();
-        setLoading(!isLoading);
-      }
-    });
-  }, []);
-
-  // if (isLoading) {
-  //   return null;
-  // }
 
   return (
     <>

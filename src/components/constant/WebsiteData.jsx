@@ -60,10 +60,9 @@ const websiteProjects = [
 ];
 
 export function WebsiteDataMobile() {
-  console.log(websiteProjects);
   return (
     <>
-      {websiteProjects.map((project) => {
+      {websiteProjects.map(project => {
         return (
           <section className="card-project card-background-mobile" key={project.id}>
             <a href={project.weblink} target="_blank" rel="noreferrer noopener">
@@ -79,7 +78,7 @@ export function WebsiteDataMobile() {
               <h3 className="card-heading">{project.name}</h3>
               <p>{project.description}</p>
               <ul key={"mobile" + project.name}>
-                {project.tags.map((tag) => {
+                {project.tags.map(tag => {
                   return <li key={tag.id}>{tag.name}</li>;
                 })}
               </ul>
@@ -94,7 +93,7 @@ export function WebsiteDataMobile() {
 export function WebsiteDataTablet() {
   return (
     <>
-      {websiteProjects.map((project) => {
+      {websiteProjects.map(project => {
         return (
           <section className="card-project card-background-tablet" key={project.id + project.name}>
             <div className="card-image-container">
@@ -115,7 +114,7 @@ export function WebsiteDataTablet() {
                 <h3 className="card-heading">{project.name}</h3>
                 <p>{project.description}</p>
                 <ul key={"tablet" + project.name}>
-                  {project.tags.map((tag) => {
+                  {project.tags.map(tag => {
                     return <li key={tag.id}>{tag.name}</li>;
                   })}
                 </ul>

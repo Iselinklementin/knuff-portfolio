@@ -4,11 +4,13 @@ import Container from "../ui/Container";
 import iPhone from "../../images/developer/iphone-web.png";
 import { WebsiteDataMobile, WebsiteDataTablet } from "../constant/WebsiteData";
 import { Link } from "react-router-dom";
+import Loader from "../ui/Loader";
 
 export default function Websites() {
   return (
     <>
       <div className="wrapper websites">
+        <Loader />
         <Nav />
         <Container>
           <h3 className="mobile frontend">Frontend development</h3>

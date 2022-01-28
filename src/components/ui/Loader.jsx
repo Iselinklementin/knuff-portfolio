@@ -1,6 +1,26 @@
-import React from "react";
+// import React from "react";
+import React, { useState, useEffect } from "react";
 
 function Loader() {
+  const [isLoading, setLoading] = useState(true);
+
+  function fakeRequest() {
+    return new Promise(resolve => setTimeout(() => resolve(), 1200));
+  }
+
+  useEffect(() => {
+    fakeRequest().then(() => {
+      const el = document.querySelector(".loader-container");
+      if (el) {
+        el.remove();
+        setLoading(!isLoading);
+      }
+    });
+  }, []);
+
+  // if (isLoading) {
+  //   return null;
+  // }
   return (
     <div className="loading-container loader-container">
       <svg>

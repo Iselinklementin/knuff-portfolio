@@ -4,11 +4,13 @@ import Footer from "../layout/Footer";
 import Container from "../ui/Container";
 import Mugs from "../../images/design/mugs.png";
 import { PortfolioDataMobile, PortfolioDataTablet } from "../constant/PortfolioData";
+import Loader from "../ui/Loader";
 
 export default function Portfolio() {
   return (
     <>
       <div className="wrapper design">
+        <Loader />
         <Nav />
         <Container>
           <h3 className="mobile graphic">Graphic design</h3>
