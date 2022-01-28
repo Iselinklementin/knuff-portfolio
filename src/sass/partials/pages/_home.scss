@@ -459,6 +459,10 @@
       height: 400px;
     }
 
+    @include for-tablet-pro {
+      margin-top: 10rem;
+    }
+
     &-text {
       margin: 1rem;
       max-width: 450px;
