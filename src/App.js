@@ -24,7 +24,7 @@ export default function App() {
 
   const [isLoading, setLoading] = useState(true);
   function fakeRequest() {
-    return new Promise(resolve => setTimeout(() => resolve(), 1700));
+    return new Promise(resolve => setTimeout(() => resolve(), 1200));
   }
 
   useEffect(() => {

@@ -2821,8 +2821,8 @@ footer a {
   stroke-dasharray: 360;
   stroke-dashoffset: 20;
   stroke: #53d0a4;
-  -webkit-animation: progress-1 2s ease-out;
-          animation: progress-1 2s ease-out;
+  -webkit-animation: progress-1 1.1s ease-out;
+          animation: progress-1 1.1s ease-out;
 }
 
 @-webkit-keyframes progress-1 {
