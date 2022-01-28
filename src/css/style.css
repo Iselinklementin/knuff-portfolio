@@ -664,7 +664,7 @@ footer a {
 
 @media (min-width: 1024px) {
   .modal-background .close {
-    top: 2%;
+    top: 1.5rem;
   }
 }
 
