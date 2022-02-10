@@ -31,6 +31,8 @@ const portfolioProjects = [
     modal_img_1: [CinderellaBrochure],
     modal_img_2: [CinderellaMockup],
     modal_img_3: [Posepakker],
+    modal_text:
+      "They have been one of my most loyal, fun and interesting customers. I have been involved in the development of new campaigns, products and designs. I also got to be part of the journey when they were expanding to other countries.",
   },
   {
     id: 2,
@@ -46,6 +48,8 @@ const portfolioProjects = [
     modal_img_1: [Rollups],
     modal_img_2: [hl_flyer],
     modal_img_3: [hl_mac],
+    modal_text:
+      "I have been involved in developing flyers, rollups, ads, beach flags, logos, signage, banners and merch. They have several parks across the country and have an exciting concept that it has been a pleasure to be included in.",
   },
   {
     id: 3,
@@ -61,6 +65,8 @@ const portfolioProjects = [
     modal_img_1: [BjerkePopup],
     modal_img_2: [BjerkeA4],
     modal_img_3: [Skagenrore],
+    modal_text:
+      "It has been exciting to develop packaging designs, store stands, gift boxes and product catalogs for this customer. They have won several medals for the good quality of the products, and I am happy to be able to show it visually.",
   },
   {
     id: 4,
@@ -76,6 +82,8 @@ const portfolioProjects = [
     modal_img_1: [FeMag],
     modal_img_2: [FeMagazine],
     modal_img_3: [FeMagBok],
+    modal_text:
+      "I have made several prospectuses for Format Eiendom. They have given me freedom and confidence during the design process, and I have been allowed to participate in design decisions all the way. The collaboration with Format Eiendom has been great, and I appreciate the trust they have given me.",
   },
 ];
 
@@ -83,11 +91,11 @@ export function PortfolioDataMobile() {
   let count = 0;
   return (
     <>
-      {portfolioProjects.map(project => {
+      {portfolioProjects.map((project) => {
         return (
           <section className="card-project card-background-mobile" key={project.id}>
             <SimpleModal key={project.name}>
-              {project.tags.map(tag => {
+              {project.tags.map((tag) => {
                 count++;
                 if (count === 1 || count === 4 || count === 7 || count === 10) {
                   return (
@@ -112,11 +120,11 @@ export function PortfolioDataMobile() {
               <section className="modal-text">
                 <h2>{project.name}</h2>
                 <p>
-                  Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam,
-                  sollicitudin posuere massa lacus cursus ligula. Quisque vel turpis a quam posuere
-                  lobortis. Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam.
-                  Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam,
-                  sollicitudin posuere massa lacus cursus ligula.
+                  {project.modal_text}
+                  {/* Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa
+                  lacus cursus ligula. Quisque vel turpis a quam posuere lobortis. Nullam tincidunt, nisl eget
+                  vestibulum rhoncus, elit nisi faucibus quam. Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi
+                  faucibus quam, sollicitudin posuere massa lacus cursus ligula. */}
                 </p>
               </section>
             </SimpleModal>
@@ -126,7 +134,7 @@ export function PortfolioDataMobile() {
               <h3>{project.name}</h3>
               <p>{project.description}</p>
               <ul key={"mobile" + project.name}>
-                {project.tags.map(tag => {
+                {project.tags.map((tag) => {
                   return <li key={tag.id}>{tag.name}</li>;
                 })}
               </ul>
@@ -142,7 +150,7 @@ export function PortfolioDataTablet() {
   let count = 0;
   return (
     <>
-      {portfolioProjects.map(project => {
+      {portfolioProjects.map((project) => {
         return (
           <section className="card-project card-background-tablet" key={project.id + project.name}>
             <div className="card-image-container">
@@ -151,7 +159,7 @@ export function PortfolioDataTablet() {
 
             <div className="card-text-container">
               <SimpleModal key={project.name}>
-                {project.tags.map(tag => {
+                {project.tags.map((tag) => {
                   count++;
                   if (count === 1 || count === 4 || count === 7 || count === 10) {
                     return (
@@ -176,11 +184,11 @@ export function PortfolioDataTablet() {
                 <section className="modal-text">
                   <h2>{project.name}</h2>
                   <p>
-                    Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam,
-                    sollicitudin posuere massa lacus cursus ligula. Quisque vel turpis a quam
-                    posuere lobortis. Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi
-                    faucibus quam, sollicitudin posuere massa lacus cursus ligula. Quisque vel
-                    turpis a quam posuere lobortis.
+                    {project.modal_text}
+                    {/* Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa
+                    lacus cursus ligula. Quisque vel turpis a quam posuere lobortis. Nullam tincidunt, nisl eget
+                    vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa lacus cursus ligula. Quisque
+                    vel turpis a quam posuere lobortis. */}
                   </p>
                 </section>
               </SimpleModal>
@@ -190,7 +198,7 @@ export function PortfolioDataTablet() {
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <ul key={"tablet" + project.name}>
-                  {project.tags.map(tag => {
+                  {project.tags.map((tag) => {
                     return <li key={tag.id}>{tag.name}</li>;
                   })}
                 </ul>
