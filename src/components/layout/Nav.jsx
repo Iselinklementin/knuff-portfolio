@@ -41,7 +41,7 @@ function Nav() {
             <Link to="/about">
               <img className="nav-icon" src={aboutIcon} alt="design-icon" />
             </Link>
-            <Link to="#" className="resume-btn">
+            <Link to="/resume" className="resume-btn">
               Resume
             </Link>
           </div>

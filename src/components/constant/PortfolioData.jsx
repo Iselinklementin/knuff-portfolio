@@ -119,13 +119,7 @@ export function PortfolioDataMobile() {
 
               <section className="modal-text">
                 <h2>{project.name}</h2>
-                <p>
-                  {project.modal_text}
-                  {/* Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa
-                  lacus cursus ligula. Quisque vel turpis a quam posuere lobortis. Nullam tincidunt, nisl eget
-                  vestibulum rhoncus, elit nisi faucibus quam. Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi
-                  faucibus quam, sollicitudin posuere massa lacus cursus ligula. */}
-                </p>
+                <p>{project.modal_text}</p>
               </section>
             </SimpleModal>
 
@@ -183,13 +177,7 @@ export function PortfolioDataTablet() {
 
                 <section className="modal-text">
                   <h2>{project.name}</h2>
-                  <p>
-                    {project.modal_text}
-                    {/* Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa
-                    lacus cursus ligula. Quisque vel turpis a quam posuere lobortis. Nullam tincidunt, nisl eget
-                    vestibulum rhoncus, elit nisi faucibus quam, sollicitudin posuere massa lacus cursus ligula. Quisque
-                    vel turpis a quam posuere lobortis. */}
-                  </p>
+                  <p>{project.modal_text}</p>
                 </section>
               </SimpleModal>
 
