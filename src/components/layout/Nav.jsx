@@ -42,12 +42,8 @@ function Nav() {
             <Link to="/about">
               <img className="nav-icon" src={aboutIcon} alt="design-icon" />
             </Link>
-            {/* <a href="/resume.pdf" className="resume-btn" target="_blank" rel="noopener noreferrer">
-              <i className="fa-solid fa-cloud-arrow-down"></i>Resume
-            </a> */}
             <a href={Resume} className="resume-btn" download="Iselin Haugen - Resume">
-              <i className="fa-solid fa-circle-down"></i>
-              Resume
+              <i className="fa-solid fa-cloud-arrow-down resume-icon"></i> Resume
             </a>
           </div>
         </div>

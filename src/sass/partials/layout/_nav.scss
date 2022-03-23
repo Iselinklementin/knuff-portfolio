@@ -59,8 +59,12 @@ nav {
     text-align: center;
     text-decoration: none;
     line-height: 2.4;
-    text-transform: uppercase;
     transition: all 0.3s;
+    color: getColour(green);
+
+    .resume-icon {
+      margin-right: 5px;
+    }
 
     &:hover {
       background-color: getColour(green);

@@ -135,6 +135,11 @@
 
     .about-btn {
       margin-top: 1.5rem;
+
+      .about-resume-icon {
+        margin-right: 10px;
+        line-height: 1.5;
+      }
     }
   }
 
@@ -248,13 +253,17 @@
 
       i {
         margin-right: 1rem;
-        font-size: 1.5rem;
+        // font-size: 1.5rem;
       }
 
       a {
         text-decoration: none;
         color: getColour(green);
         display: block;
+
+        &:hover {
+          color: #9addc5;
+        }
       }
     }
   }
