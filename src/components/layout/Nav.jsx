@@ -5,6 +5,7 @@ import codeIcon from "../../images/codeIcon.svg";
 import designIcon from "../../images/designIcon.svg";
 import aboutIcon from "../../images/aboutIcon.svg";
 import React from "react";
+import Resume from "../../download/resume.pdf";
 
 function Nav() {
   return (
@@ -41,9 +42,12 @@ function Nav() {
             <Link to="/about">
               <img className="nav-icon" src={aboutIcon} alt="design-icon" />
             </Link>
-            <Link to="/resume" className="resume-btn">
+            <a href="/resume.pdf" className="resume-btn" target="_blank" rel="noopener noreferrer">
               Resume
-            </Link>
+            </a>
+            {/* <a href={Resume} className="resume-btn" download="Iselin Haugen - Resume">
+              Resume
+            </a> */}
           </div>
         </div>
       </nav>
