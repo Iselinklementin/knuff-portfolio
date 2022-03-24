@@ -34,14 +34,14 @@ export default function Portfolio() {
           <p className="text">It’s not about decorating, but communicating.</p>
           <div className="text-container">
             <p>
-              Most of my time I have been creating and working closely with typography, layout, and
-              all of the details in between.
+              Most of my time I have been creating and working closely with typography, layout, and all of the details
+              in between.
             </p>
 
             <p>
-              I bring experience, creativity and understanding to every project I work on, and I’ve
-              been fortunate to work with several companies to develop my skill set. I have chosen a
-              few of my projects here, take a look around.
+              I bring experience, creativity and understanding to every project I work on, and I’ve been fortunate to
+              work with several companies to develop my skill set. I have chosen a few of my projects here, please take
+              a look.
             </p>
           </div>
         </Container>
