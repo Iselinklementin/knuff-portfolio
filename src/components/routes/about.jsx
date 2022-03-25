@@ -2,7 +2,7 @@ import Nav from "../layout/Nav";
 import Footer from "../layout/Footer";
 import Heading from "../ui/Heading";
 import Container from "../ui/Container";
-import Me from "../../images/about-me.jpg";
+import Me from "../../images/ame12-min.jpg";
 import LogoData from "../constant/LogoData";
 import Loader from "../ui/Loader";
 import Resume from "../../download/resume.pdf";

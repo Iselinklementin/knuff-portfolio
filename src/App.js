@@ -3,7 +3,7 @@ import Footer from "./components/layout/Footer";
 import Nav from "./components/layout/Nav";
 import Bird from "./images/home/bird1.jpg";
 import Manet from "./images/home/manet.jpg";
-import Me from "./images/about-me.jpg";
+import Me from "./images/ame12-min.jpg";
 import List from "./components/ui/List";
 import Container from "./components/ui/Container";
 import Heading from "./components/ui/Heading";
