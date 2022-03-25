@@ -6,6 +6,7 @@ import Portfolio from "./components/routes/portfolio";
 import Websites from "./components/routes/websites";
 import About from "./components/routes/about";
 import ScrollToTop from "./components/constant/ScrollToTop";
+import Resume from "./components/routes/resume";
 
 const rootElement = document.getElementById("root");
 render(
@@ -16,6 +17,7 @@ render(
         <Route exact path="portfolio" element={<Portfolio />} />
         <Route exact path="websites" element={<Websites />} />
         <Route exact path="about" element={<About />} />
+        {/* <Route exact path="resume" element={<Resume />} /> */}
       </Routes>
     </ScrollToTop>
   </BrowserRouter>,

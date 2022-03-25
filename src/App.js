@@ -1,7 +1,7 @@
 import "./sass/style.scss";
 import Footer from "./components/layout/Footer";
 import Nav from "./components/layout/Nav";
-import Bird from "./images/home/bird.jpg";
+import Bird from "./images/home/bird1.jpg";
 import Manet from "./images/home/manet.jpg";
 import Me from "./images/about-me.jpg";
 import List from "./components/ui/List";
@@ -12,13 +12,7 @@ import Loader from "./components/ui/Loader";
 import React from "react";
 
 export default function App() {
-  const designList = [
-    "Adobe InDesign",
-    "Adobe Illustrator",
-    "Adobe Photoshop",
-    "Adobe XD",
-    "Procreate",
-  ];
+  const designList = ["Adobe InDesign", "Adobe Illustrator", "Adobe Photoshop", "Adobe XD", "Procreate"];
   const developerList = ["Sass", "React", "Bootstrap", "WordPress API", "Strapi API"];
 
   return (
@@ -39,10 +33,7 @@ export default function App() {
           <section className="intro-section">
             <h3>Nice to meet you</h3>
             <div className="code-icon"></div>
-            <p>
-              I love clean code, creating strategies, problem solving and design that makes people
-              act.
-            </p>
+            <p>I love clean code, creating strategies, problem solving and design that makes people act.</p>
             <p>I’m at my happiest when I’m creating, learning & exploring.</p>
           </section>
 
@@ -76,9 +67,9 @@ export default function App() {
               Designer<span>.</span>
             </h3>
             <p>
-              I’m a graphic designer and I’ve worked in all areas of branding and design for print.
-              I have designed small business cards, large bus wrappings - and everything between.
-              Take a look at my portfolio to see some of my work.
+              I’m a graphic designer and I’ve worked in all areas of branding and design for print. I have designed
+              small business cards, large bus wrappings - and everything between. Take a look at my portfolio to see
+              some of my work.
             </p>
             <div className="keywords-desktop">
               <p>Colours</p>
@@ -101,9 +92,9 @@ export default function App() {
 
           <div className="description description-tablet">
             <p>
-              I’m a graphic designer and I’ve worked in all areas of branding and design for print.
-              I have designed small business cards, large bus wrappings - and everything between.
-              Take a look at my portfolio to see some of my work.
+              I’m a graphic designer and I’ve worked in all areas of branding and design for print. I have designed
+              small business cards, large bus wrappings - and everything between. Take a look at my portfolio to see
+              some of my work.
             </p>
             <div className="keywords-desktop">
               <p>Colours</p>
@@ -145,9 +136,8 @@ export default function App() {
               Developer<span>.</span>
             </h3>
             <p>
-              Through my studies at Noroff I have gotten exposure to a wide range of web development
-              skills. I’d love to work with forward-thinking people to design and build interactive,
-              accessible websites and products.
+              Through my studies at Noroff I have gotten exposure to a wide range of web development skills. I’d love to
+              work with forward-thinking people to design and build interactive, accessible websites and products.
             </p>
             <div className="keywords-desktop">
               <p>Meaningful</p>
@@ -171,9 +161,8 @@ export default function App() {
 
           <div className="description description-tablet">
             <p>
-              Through my studies at Noroff I have gotten exposure to a wide range of web development
-              skills. I’d love to work with forward-thinking people to design and build interactive,
-              accessible websites and products.
+              Through my studies at Noroff I have gotten exposure to a wide range of web development skills. I’d love to
+              work with forward-thinking people to design and build interactive, accessible websites and products.
             </p>
             <div className="keywords-desktop">
               <p>Meaningful</p>
@@ -202,17 +191,15 @@ export default function App() {
 
           <div className="about-text">
             <h2>Hello.</h2>
-            <p className="about-intro">
-              I’m a designer, frontend developer, gamer and puzzle enthusiast.
-            </p>
+            <p className="about-intro">I’m a designer, frontend developer, gamer and puzzle enthusiast.</p>
             <p>
-              I’m based in Sandefjord and have two kids. After 8 years working as a graphic designer
-              it was time to explore and evolve, so I went back to school to learn how to code!
+              I’m based in Sandefjord and have two kids. After 8 years working as a graphic designer it was time to
+              explore and evolve, so I went back to school to learn how to code!
             </p>
 
             <p>
-              I believe my experience working as a designer is a great strength in development. Both
-              with UX and creating UI - but also when writing short, meaningful code.
+              I believe my experience working as a designer is a great strength in development. Both with UX and
+              creating UI - but also when writing short, meaningful code.
             </p>
 
             <Link to="/about" className="about-btn mobile-btn">
