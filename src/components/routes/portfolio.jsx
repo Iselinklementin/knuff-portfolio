@@ -54,7 +54,7 @@ export default function Portfolio() {
 
         <Container>
           <div className="links-container">
-            <Link to="/wesites" className="design-links">
+            <Link to="/websites" className="design-links">
               <i className="fas fa-chevron-left"></i> Developer
             </Link>
             <Link to="/about" className="design-links">

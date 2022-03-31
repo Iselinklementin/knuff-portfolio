@@ -75,7 +75,7 @@ export default function About() {
               <h4>Create</h4>
               <p>Decorating rooms, drawing, doing gardening or building stuff.</p>
               <h4>Gamer</h4>
-              <p>It started with Duke Nukem in 1993, after that I was sold!</p>
+              <p>It started with Duke Nukem in 1993, and fell in love with gaming!</p>
               <h4>Jigsaw Puzzles</h4>
               <p>There is nothing more satisfying for me than putting the last piece of the puzzle in its place.</p>
               <h4>Active</h4>
