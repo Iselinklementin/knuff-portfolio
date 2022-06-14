@@ -2,8 +2,53 @@ import Community from "../../images/developer/projects/semesterp.jpg";
 import Gamehub from "../../images/developer/projects/gamehub.jpg";
 import Travels from "../../images/developer/projects/exam.jpg";
 import Milky from "../../images/developer/projects/milky.jpg";
+import Bergen from "../../images/developer/projects/hotel.jpg";
 
 const websiteProjects = [
+  {
+    id: 5,
+    name: "Holidaze",
+    description:
+      "My final exam! This is a booking site with both customer and admin sections. Messages, enquiries and hotels is managed in admin section.",
+
+    tags: [
+      { name: "WP rest API", id: 7 },
+      { name: "Next.js", id: 8 },
+      { name: "Styled Components", id: 9 },
+    ],
+    src: [Bergen],
+    weblink: "https://iselin-project-exam2.netlify.app/",
+    git: "https://github.com/Iselinklementin/project_exam22",
+  },
+  {
+    id: 4,
+    name: "Milky",
+    description:
+      "We was to create an e-commerce website that has both customer-facing and admin sections, using Strapi API, local storage, Heroku and Cloudinary.",
+    tags: [
+      { name: "Heroku", id: 7 },
+      { name: "JS", id: 8 },
+      { name: "Sass", id: 9 },
+      { name: "Cloudinary", id: 10 },
+    ],
+    src: [Milky],
+    weblink: "https://iselin-milky.netlify.app",
+    git: "https://github.com/Iselinklementin/sp2",
+  },
+  {
+    id: 3,
+    name: "Explore Travels",
+    description:
+      "This was our exam the first year. We were asked to create a blog site, using Wordpress API. We needed to include comments, filter and searchbar.",
+    tags: [
+      { name: "Javascript", id: 4 },
+      { name: "CSS", id: 5 },
+      { name: "Wordpress API", id: 6 },
+    ],
+    src: [Travels],
+    weblink: "https://iselin-haugen-projectexam1-portfolio.netlify.app",
+    git: "https://github.com/Iselinklementin/portfolio-project-exam-1",
+  },
   {
     id: 1,
     name: "Community Science Museum",
@@ -26,35 +71,6 @@ const websiteProjects = [
     src: [Gamehub],
     weblink: "https://iselin-haugen-gamehub-portfolio21.netlify.app",
     git: "https://github.com/Iselinklementin/portfolio-gamehub",
-  },
-  {
-    id: 3,
-    name: "Explore Travels",
-    description:
-      "This was our exam the first year. We were asked to create a blog site, using Wordpress API. We needed to include comments, filter and searchbar.",
-    tags: [
-      { name: "Javascript", id: 4 },
-      { name: "CSS", id: 5 },
-      { name: "Wordpress API", id: 6 },
-    ],
-    src: [Travels],
-    weblink: "https://iselin-haugen-projectexam1-portfolio.netlify.app",
-    git: "https://github.com/Iselinklementin/portfolio-project-exam-1",
-  },
-  {
-    id: 4,
-    name: "Milky",
-    description:
-      "We was to create an e-commerce website that has both customer-facing and admin sections, using Strapi API, local storage, Heroku and Cloudinary.",
-    tags: [
-      { name: "Heroku", id: 7 },
-      { name: "JS", id: 8 },
-      { name: "Sass", id: 9 },
-      { name: "Cloudinary", id: 10 },
-    ],
-    src: [Milky],
-    weblink: "https://iselin-milky.netlify.app",
-    git: "https://github.com/Iselinklementin/sp2",
   },
 ];
 
