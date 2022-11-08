@@ -13,4 +13,4 @@ A link to the finished portfolio website.
 
 ---
 
-[This is my portfolio](https://knuff-portfolio.netlify.app/)
+My portfolio -> https://iselinklementin.netlify.app/
